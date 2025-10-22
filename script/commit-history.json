@@ -114,12 +114,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a2b8070c7a14924d1928cd15b340db5b417836ed",
     "author": "leitocam",
     "commit": {
       "date": "2025-10-22T05:50:59.000Z",
       "message": "Feat: Estructura de Archivos",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/a2b8070c7a14924d1928cd15b340db5b417836ed"
     },
     "stats": {
       "total": 0,
@@ -129,6 +129,25 @@
     },
     "coverage": 0,
     "test_count": 1,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Adrian Rodriguez",
+    "commit": {
+      "date": "2025-10-22T22:52:09.000Z",
+      "message": "test: Se verifico la existenciade la funcion EnviarSolicitudAdoptar",
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2025-10-22"
+    },
+    "coverage": 0,
+    "test_count": 2,
     "failed_tests": 1,
     "conclusion": "failure"
   }
