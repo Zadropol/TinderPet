@@ -152,17 +152,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "729e7461c12acad55cae9eac5aa29e055ae18bde",
     "author": "lucianaaaaaaa",
     "commit": {
       "date": "2025-10-22T22:46:05.000Z",
       "message": "fetch:ingresa la especie de la mascota",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/729e7461c12acad55cae9eac5aa29e055ae18bde"
     },
     "stats": {
       "total": 23,
       "additions": 19,
       "deletions": 4,
+      "date": "2025-10-22"
+    },
+    "coverage": 72.73,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "lucianaaaaaaa",
+    "commit": {
+      "date": "2025-10-22T22:51:40.000Z",
+      "message": "fetch:ingresa el sexo de la mascota",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 45,
+      "additions": 39,
+      "deletions": 6,
       "date": "2025-10-22"
     },
     "coverage": 72.73,

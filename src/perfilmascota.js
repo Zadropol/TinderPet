@@ -5,12 +5,14 @@
  * @param {string} imagen
  * @returns {string}
  */
-function crearperfil(nombre, edad, raza, imagen) {
+function crearperfil(nombre, edad, raza, imagen, especie, sexo) {
     const nuevoPerfil = {
         nombre: nombre,
         edad: edad,
         raza: raza,
-        imagen: imagen
+        imagen: imagen,
+        especie: especie,
+        sexo: sexo
     };
 
     const perfilesExistentesJSON = localStorage.getItem('perfilesMascotas');
