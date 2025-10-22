@@ -19,17 +19,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b8be1677a682d47a61bfe401d48e6b5b92458102",
     "author": "Alous12",
     "commit": {
       "date": "2025-10-22T02:39:42.000Z",
       "message": "refactory: se muestra el nombre de la mascota en la tarjeta",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/b8be1677a682d47a61bfe401d48e6b5b92458102"
     },
     "stats": {
       "total": 6,
       "additions": 4,
       "deletions": 2,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-10-22T02:49:10.000Z",
+      "message": "fetch: agrega y muestra edad de la mascota",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 21,
+      "deletions": 5,
       "date": "2025-10-22"
     },
     "coverage": 100,
