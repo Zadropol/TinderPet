@@ -133,12 +133,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "65a11ba76b4eb0da3e12f543348b2a35f9fcd279",
     "author": "Adrian Rodriguez",
     "commit": {
       "date": "2025-10-22T22:52:09.000Z",
       "message": "test: Se verifico la existenciade la funcion EnviarSolicitudAdoptar",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/65a11ba76b4eb0da3e12f543348b2a35f9fcd279"
     },
     "stats": {
       "total": 10,
@@ -148,6 +148,25 @@
     },
     "coverage": 0,
     "test_count": 2,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Adrian Rodriguez",
+    "commit": {
+      "date": "2025-10-22T22:54:43.000Z",
+      "message": "feat: El codigo retorna 'Solicitud enviada correctamente' de manera exitosa",
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-10-22"
+    },
+    "coverage": 8.33,
+    "test_count": 3,
     "failed_tests": 1,
     "conclusion": "failure"
   }
