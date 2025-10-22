@@ -114,17 +114,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a68554d5dd6ed70f77ae6bdf646778038e9d63cd",
     "author": "Alous12",
     "commit": {
       "date": "2025-10-22T22:12:26.000Z",
       "message": "test(perfilmascota): corrige y ajusta pruebas para formato y simulacion de localStorage",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/a68554d5dd6ed70f77ae6bdf646778038e9d63cd"
     },
     "stats": {
       "total": 67,
       "additions": 52,
       "deletions": 15,
+      "date": "2025-10-22"
+    },
+    "coverage": 72.73,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-10-22T22:19:12.000Z",
+      "message": "style: añade estilo a ña parte de crear perfil mascota",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 125,
+      "additions": 125,
+      "deletions": 0,
       "date": "2025-10-22"
     },
     "coverage": 72.73,
