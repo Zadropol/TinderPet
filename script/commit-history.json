@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "466e9aba8508c4e82aa35d9a1a95f4cad03917f3",
     "author": "Alous12",
     "commit": {
       "date": "2025-10-22T04:14:11.000Z",
       "message": "refactor: guarda los perfiles en un array de manera local",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/466e9aba8508c4e82aa35d9a1a95f4cad03917f3"
     },
     "stats": {
       "total": 60,
@@ -112,5 +112,24 @@
     "test_count": 1,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-10-22T22:12:26.000Z",
+      "message": "test(perfilmascota): corrige y ajusta pruebas para formato y simulacion de localStorage",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 67,
+      "additions": 52,
+      "deletions": 15,
+      "date": "2025-10-22"
+    },
+    "coverage": 72.73,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
