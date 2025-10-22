@@ -152,12 +152,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "61fa1601e270ded365dea3d7b4af8dcfa5bb85bb",
     "author": "Adrian Rodriguez",
     "commit": {
       "date": "2025-10-22T22:54:43.000Z",
       "message": "feat: El codigo retorna 'Solicitud enviada correctamente' de manera exitosa",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/61fa1601e270ded365dea3d7b4af8dcfa5bb85bb"
     },
     "stats": {
       "total": 6,
@@ -167,6 +167,25 @@
     },
     "coverage": 8.33,
     "test_count": 3,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Adrian Rodriguez",
+    "commit": {
+      "date": "2025-10-22T23:47:05.000Z",
+      "message": "chore: se elimino la carpeta adopcion",
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 19,
+      "deletions": 8,
+      "date": "2025-10-22"
+    },
+    "coverage": 0,
+    "test_count": 1,
     "failed_tests": 1,
     "conclusion": "failure"
   }
