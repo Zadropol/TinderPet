@@ -1,12 +1,13 @@
-import crearperfil from "./perfilmascota";
+import { crearperfil, cargarPerfilesGuardados } from "./perfilmascota";
 
 const name = document.querySelector("#nombre-mascota");
 const age = document.querySelector("#edad-mascota");
 const raza = document.querySelector("#raza-mascota");
 const imagen = document.querySelector("#imagen-mascota");
 const form = document.querySelector("#perfil-form");
-const div = document.querySelector("#resultado-div");
+const divResultado = document.querySelector("#resultado-div");
 
+divResultado.innerHTML = cargarPerfilesGuardados();
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -14,5 +15,6 @@ form.addEventListener("submit", (event) => {
   const EdadMascota = age.value;
   const RazaMascota = raza.value;
   const ImagenMascota = imagen.value;
-  div.innerHTML = "<p>" + crearperfil(NombreMascota,EdadMascota,RazaMascota,ImagenMascota) + "</p>";
+  divResultado.innerHTML = crearperfil(NombreMascota,EdadMascota,RazaMascota,ImagenMascota);
+  form.reset();
 });

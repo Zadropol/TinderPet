@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8f88aa695528e0bf2850c2a0e4cc394a66cd8c15",
     "author": "Alous12",
     "commit": {
       "date": "2025-10-22T03:29:30.000Z",
       "message": "fetch: agrega y muestra foto de la mascota",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/8f88aa695528e0bf2850c2a0e4cc394a66cd8c15"
     },
     "stats": {
       "total": 34,
@@ -93,5 +93,24 @@
     "test_count": 1,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-10-22T04:14:11.000Z",
+      "message": "refactor: guarda los perfiles en un array de manera local",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 55,
+      "deletions": 5,
+      "date": "2025-10-22"
+    },
+    "coverage": 0,
+    "test_count": 1,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
