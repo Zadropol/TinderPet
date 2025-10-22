@@ -6,6 +6,7 @@ const raza = document.querySelector("#raza-mascota");
 const imagen = document.querySelector("#imagen-mascota");
 const especie = document.querySelector("#especie-mascota");
 const sexo = document.querySelector("#sexo-mascota");
+const vacunas = document.querySelector("#vacunas-mascota");
 const form = document.querySelector("#perfil-form");
 const divResultado = document.querySelector("#resultado-div");
 
@@ -19,7 +20,8 @@ form.addEventListener("submit", (event) => {
   const ImagenMascota = imagen.value;
   const EspecieMascota = especie.value;
   const SexoMascota = sexo.value;
+  const VacunasMascota = vacunas.value;
 
-  divResultado.innerHTML = crearperfil(NombreMascota,EdadMascota,RazaMascota,ImagenMascota,EspecieMascota,SexoMascota);
+  divResultado.innerHTML = crearperfil(NombreMascota,EdadMascota,RazaMascota,ImagenMascota,EspecieMascota,SexoMascota,VacunasMascota);
   form.reset();
 });
