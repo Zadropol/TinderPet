@@ -1,0 +1,2 @@
+function EnviarSolicitudAdoptar() {}
+export { EnviarSolicitudAdoptar };

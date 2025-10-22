@@ -114,12 +114,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a68554d5dd6ed70f77ae6bdf646778038e9d63cd",
     "author": "Alous12",
     "commit": {
       "date": "2025-10-22T22:12:26.000Z",
       "message": "test(perfilmascota): corrige y ajusta pruebas para formato y simulacion de localStorage",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/a68554d5dd6ed70f77ae6bdf646778038e9d63cd"
     },
     "stats": {
       "total": 67,
@@ -129,6 +129,25 @@
     },
     "coverage": 72.73,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Adrian Rodriguez",
+    "commit": {
+      "date": "2025-10-22T22:48:47.000Z",
+      "message": "test: Se verifico la existenciade la funcion EnviarSolicitudAdoptar",
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2025-10-22"
+    },
+    "coverage": 72.73,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }
