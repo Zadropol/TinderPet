@@ -190,17 +190,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a323c90ed69a83001b34c7470dd2275eb458fd80",
     "author": "lucianaaaaaaa",
     "commit": {
       "date": "2025-10-22T22:55:31.000Z",
       "message": "fetch:ingresa las vacunas de la mascota",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/a323c90ed69a83001b34c7470dd2275eb458fd80"
     },
     "stats": {
       "total": 43,
       "additions": 37,
       "deletions": 6,
+      "date": "2025-10-22"
+    },
+    "coverage": 72.73,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "lucianaaaaaaa",
+    "commit": {
+      "date": "2025-10-22T23:41:13.000Z",
+      "message": "feat(buscar): implementa búsqueda básica de mascotas por edad y muestra el nombre de la mascota",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 39,
+      "deletions": 0,
       "date": "2025-10-22"
     },
     "coverage": 72.73,
