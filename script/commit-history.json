@@ -1,16 +1,35 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "8bb77a3d6df014df2c6bfe30f48a38957208757a",
     "author": "Alous12",
     "commit": {
       "date": "2025-10-22T02:31:19.000Z",
       "message": "fetch: agrega nombre de la mascota en la tarjeta de perfil",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/8bb77a3d6df014df2c6bfe30f48a38957208757a"
     },
     "stats": {
       "total": 58,
       "additions": 29,
       "deletions": 29,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-10-22T02:39:42.000Z",
+      "message": "refactory: se muestra el nombre de la mascota en la tarjeta",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 4,
+      "deletions": 2,
       "date": "2025-10-22"
     },
     "coverage": 100,
