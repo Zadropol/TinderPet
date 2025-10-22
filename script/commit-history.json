@@ -133,17 +133,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ca910a8b56aceae54b71865aefd3f53e0020a4ce",
     "author": "Alous12",
     "commit": {
       "date": "2025-10-22T22:19:12.000Z",
       "message": "style: añade estilo a ña parte de crear perfil mascota",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/ca910a8b56aceae54b71865aefd3f53e0020a4ce"
     },
     "stats": {
       "total": 125,
       "additions": 125,
       "deletions": 0,
+      "date": "2025-10-22"
+    },
+    "coverage": 72.73,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "lucianaaaaaaa",
+    "commit": {
+      "date": "2025-10-22T22:46:05.000Z",
+      "message": "fetch:ingresa la especie de la mascota",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 19,
+      "deletions": 4,
       "date": "2025-10-22"
     },
     "coverage": 72.73,
