@@ -95,17 +95,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "466e9aba8508c4e82aa35d9a1a95f4cad03917f3",
     "author": "Alous12",
     "commit": {
       "date": "2025-10-22T04:14:11.000Z",
       "message": "refactor: guarda los perfiles en un array de manera local",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/466e9aba8508c4e82aa35d9a1a95f4cad03917f3"
     },
     "stats": {
       "total": 60,
       "additions": 55,
       "deletions": 5,
+      "date": "2025-10-22"
+    },
+    "coverage": 0,
+    "test_count": 1,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "leitocam",
+    "commit": {
+      "date": "2025-10-22T05:50:59.000Z",
+      "message": "Feat: Estructura de Archivos",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
       "date": "2025-10-22"
     },
     "coverage": 0,
