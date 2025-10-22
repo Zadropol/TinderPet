@@ -1,15 +1,13 @@
-import sumar from "./sumador";
+import crearperfil from "./perfilmascota";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
+const name = document.querySelector("#nombre-mascota");
+const form = document.querySelector("#perfil-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  const NombreMascota = name.value;
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  div.innerHTML = "<p>" + crearperfil(NombreMascota) + "</p>";
 });

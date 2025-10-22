@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-10-22T02:31:19.000Z",
+      "message": "fetch: agrega nombre de la mascota en la tarjeta de perfil",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 58,
+      "additions": 29,
+      "deletions": 29,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
