@@ -38,17 +38,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e0b298ac1af7b82f4ba69dc2e705eaa91edf322b",
     "author": "Alous12",
     "commit": {
       "date": "2025-10-22T02:49:10.000Z",
       "message": "fetch: agrega y muestra edad de la mascota",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/e0b298ac1af7b82f4ba69dc2e705eaa91edf322b"
     },
     "stats": {
       "total": 26,
       "additions": 21,
       "deletions": 5,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-10-22T02:57:26.000Z",
+      "message": "fetch: agrega y muestra raza de la mascota",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 24,
+      "deletions": 7,
       "date": "2025-10-22"
     },
     "coverage": 100,
