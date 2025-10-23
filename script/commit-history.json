@@ -171,12 +171,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "56fdea2def3c1c9e46097ae0912466ec1f7583dd",
     "author": "Adrian Rodriguez",
     "commit": {
       "date": "2025-10-22T23:47:05.000Z",
       "message": "chore: se elimino la carpeta adopcion",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/56fdea2def3c1c9e46097ae0912466ec1f7583dd"
     },
     "stats": {
       "total": 27,
@@ -188,5 +188,24 @@
     "test_count": 1,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Adrian Rodriguez",
+    "commit": {
+      "date": "2025-10-23T00:02:52.000Z",
+      "message": "feat: se volvio a agregar la carpeta adopcion, la funcion existe",
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+    },
+    "stats": {
+      "total": 49,
+      "additions": 18,
+      "deletions": 31,
+      "date": "2025-10-23"
+    },
+    "coverage": 0,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

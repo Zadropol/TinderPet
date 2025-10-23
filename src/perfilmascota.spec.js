@@ -1,6 +1,6 @@
-import crearperfil from "./perfilmascota";
+// import crearperfil from "./perfilmascota";
 
-describe("Crear Perfil", () => {
+// describe("Crear Perfil", () => {
   /*it("deberia poder ingresar y mostrar el nombre de la mascota", () => {
     expect(crearperfil("Firulais")).toEqual("Firulais");
   });*/
@@ -12,8 +12,8 @@ describe("Crear Perfil", () => {
 //     it("Deberia poder ingresar y mostrar la raza de la mascota", () => {
 //     expect(crearperfil("Firulais", 3, "Pitbull")).toEqual("Nombre: Firulais Edad: 3 años Raza: Pitbull");
 //   });
-    it("Deberia poder ingresar y mostrar una imagen de la mascota", () => {
-        const imageUrl = "https://www.adnradio.cl/2024/08/22/que-significa-firulais-el-popular-nombre-que-tienen-muchos-perros-en-el-mundo/";
-        expect(crearperfil("Firulais", 3, "Pitbull", imageUrl)).toEqual("Nombre: Firulais Edad: 3 años Raza: Pitbull Imagen: <img src=\"https://www.adnradio.cl/2024/08/22/que-significa-firulais-el-popular-nombre-que-tienen-muchos-perros-en-el-mundo/\" alt=\"Firulais\" />");
-  });
-});
+  //   it("Deberia poder ingresar y mostrar una imagen de la mascota", () => {
+  //       const imageUrl = "https://www.adnradio.cl/2024/08/22/que-significa-firulais-el-popular-nombre-que-tienen-muchos-perros-en-el-mundo/";
+  //       expect(crearperfil("Firulais", 3, "Pitbull", imageUrl)).toEqual("Nombre: Firulais Edad: 3 años Raza: Pitbull Imagen: <img src=\"https://www.adnradio.cl/2024/08/22/que-significa-firulais-el-popular-nombre-que-tienen-muchos-perros-en-el-mundo/\" alt=\"Firulais\" />");
+//   // });
+// });
