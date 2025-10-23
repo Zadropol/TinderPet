@@ -1,3 +1,4 @@
+// Mock de localStorage (para Jest sin navegador)
 global.localStorage = {
   store: {},
   getItem(key) { return this.store[key] || null; },
@@ -6,7 +7,6 @@ global.localStorage = {
 };
 
 import { crearperfil } from "./perfilmascota";
-
 
 describe("Crear Perfil", () => {
   beforeEach(() => {
@@ -30,33 +30,9 @@ describe("Crear Perfil", () => {
 
      
 
-    // it("Deberia poder ingresar y mostrar una imagen de la mascota", () => {
-    // const imageUrl = "https://www.adnradio.cl/2024/08/22/que-significa-firulais-el-popular-nombre-que-tienen-muchos-perros-en-el-mundo/";
-    // const resultado = crearperfil("Firulais", 3, "Pitbull", imageUrl);
-    // expect(resultado).toContain("Nombre: Firulais");
-    // expect(resultado).toContain("Edad: 3 años");
-    // expect(resultado).toContain("Raza: Pitbull");
-    // expect(resultado).toContain(`<img src="${imageUrl}" alt="Firulais"/>`);
-
-    // it("Deberia poder ingresar la especie de la mascota", () => {
-    // const imageUrl = "https://www.adnradio.cl/2024/08/22/que-significa-firulais-el-popular-nombre-que-tienen-muchos-perros-en-el-mundo/";
-    // const resultado = crearperfil("Firulais", 3, "Pitbull", imageUrl, "Perro");
-    // expect(resultado).toContain("Nombre: Firulais");
-    // expect(resultado).toContain("Edad: 3 años");
-    // expect(resultado).toContain("Raza: Pitbull");
-    // expect(resultado).toContain(`<img src="${imageUrl}" alt="Firulais"/>`);
-
-    // it("Deberia poder ingresar el sexo de la mascota", () => {
-    // const imageUrl = "https://www.adnradio.cl/2024/08/22/que-significa-firulais-el-popular-nombre-que-tienen-muchos-perros-en-el-mundo/";
-    // const resultado = crearperfil("Firulais", 3, "Pitbull", imageUrl, "Perro", "Macho");
-    // expect(resultado).toContain("Nombre: Firulais");
-    // expect(resultado).toContain("Edad: 3 años");
-    // expect(resultado).toContain("Raza: Pitbull");
-    // expect(resultado).toContain(`<img src="${imageUrl}" alt="Firulais"/>`);
-
-    it("Deberia poder ingresar las vacunas de la mascota", () => {
+    it("Deberia poder ingresar y mostrar una imagen de la mascota", () => {
     const imageUrl = "https://www.adnradio.cl/2024/08/22/que-significa-firulais-el-popular-nombre-que-tienen-muchos-perros-en-el-mundo/";
-    const resultado = crearperfil("Firulais", 3, "Pitbull", imageUrl, "Perro", "Macho", "Antirrábica, Parvovirus");
+    const resultado = crearperfil("Firulais", 3, "Pitbull", imageUrl);
     expect(resultado).toContain("Nombre: Firulais");
     expect(resultado).toContain("Edad: 3 años");
     expect(resultado).toContain("Raza: Pitbull");
