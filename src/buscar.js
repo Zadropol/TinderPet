@@ -9,4 +9,10 @@ function buscarPorEdad(edadBuscada) {
   return perfiles.filter(p => String(p.edad) === String(edadBuscada));
 }
 
-export { buscarPorEdad };
+function buscarPorRaza(razaBuscada) {
+  const perfilesJSON = localStorage.getItem("perfilesMascotas");
+  const perfiles = perfilesJSON ? JSON.parse(perfilesJSON) : [];
+  return perfiles.filter(p => p.raza.toLowerCase() === razaBuscada.toLowerCase());
+}
+
+export { buscarPorEdad, buscarPorRaza };

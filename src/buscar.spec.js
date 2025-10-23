@@ -5,15 +5,15 @@ global.localStorage = {
   clear() { this.store = {}; }
 };
 
-import { buscarPorEdad } from "./buscar";
+import { buscarPorEdad,buscarPorRaza } from "./buscar";
 
-describe("Buscar mascotas por edad", () => {
+describe("Buscar mascotas", () => {
   beforeEach(() => {
     localStorage.clear();
     localStorage.setItem("perfilesMascotas", JSON.stringify([
-      { nombre: "Firulais", edad: 3 },
-      { nombre: "Michi", edad: 2 },
-      { nombre: "Rex", edad: 3 }
+      { nombre: "Firulais", edad: 3, raza: "Pitbull" },
+      { nombre: "Michi", edad: 2, raza: "Siames" },
+      { nombre: "Rex", edad: 3, raza: "Bulldog" }
     ]));
   });
 
@@ -23,4 +23,10 @@ describe("Buscar mascotas por edad", () => {
     expect(nombres).toEqual(["Firulais", "Rex"]);
   });
 
+  it("devuelve solo las mascotas con la raza buscada", () => {
+    const resultados = buscarPorRaza("Pitbull");
+    expect(resultados).toEqual([
+      { nombre: "Firulais", edad: 3, raza: "Pitbull" }
+    ]);
+  });
 });

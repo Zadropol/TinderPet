@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6dcded0a70535c2c8834f3522cffe3a7c5ac7a77",
     "author": "lucianaaaaaaa",
     "commit": {
       "date": "2025-10-23T00:11:48.000Z",
       "message": "feat(buscar): implementa búsqueda básica de mascotas por edad y muestra el nombre de la mascota",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/6dcded0a70535c2c8834f3522cffe3a7c5ac7a77"
     },
     "stats": {
       "total": 59,
@@ -243,6 +243,25 @@
     },
     "coverage": 80,
     "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "lucianaaaaaaa",
+    "commit": {
+      "date": "2025-10-23T00:53:57.000Z",
+      "message": "feat(buscar): implementa búsqueda básica de mascotas por edad o raza y muestra el nombre,edad y raza de la mascota",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 84,
+      "additions": 61,
+      "deletions": 23,
+      "date": "2025-10-23"
+    },
+    "coverage": 84.21,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }
