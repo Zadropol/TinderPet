@@ -12,7 +12,13 @@ function buscarPorEdad(edadBuscada) {
 function buscarPorRaza(razaBuscada) {
   const perfilesJSON = localStorage.getItem("perfilesMascotas");
   const perfiles = perfilesJSON ? JSON.parse(perfilesJSON) : [];
-  return perfiles.filter(p => p.raza.toLowerCase() === razaBuscada.toLowerCase());
+  return perfiles.filter(p => p.raza && p.raza.trim().toLowerCase() === razaBuscada.trim().toLowerCase());
 }
 
-export { buscarPorEdad, buscarPorRaza };
+function buscarPorEspecie(especieBuscada) {
+  const perfilesJSON = localStorage.getItem("perfilesMascotas");
+  const perfiles = perfilesJSON ? JSON.parse(perfilesJSON) : [];
+  return perfiles.filter(p => p.especie && p.especie.trim().toLowerCase() === especieBuscada.trim().toLowerCase());
+}
+
+export { buscarPorEdad, buscarPorRaza, buscarPorEspecie };
