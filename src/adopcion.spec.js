@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import { EnviarSolicitudAdopcion } from "../src/adopcion.js";
 
@@ -12,3 +13,15 @@ describe("Solicitud de adopción por perfil", () => {
     });
 
 });
+=======
+import { EnviarSolicitudAdoptar } from "./adopcion.js";
+
+describe( "EnviarSolicitudAdoptar", () => {
+
+  test("La funciona EnviarSolicitudAdoptar esta definida", () => {
+    expect(typeof EnviarSolicitudAdoptar ).toBe("function");
+  });
+
+} );
+    
+>>>>>>> rama_luci
