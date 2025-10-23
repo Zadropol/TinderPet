@@ -190,12 +190,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a3d94c45bd06d03295cae4cc54cefabb88b52af1",
     "author": "Adrian Rodriguez",
     "commit": {
       "date": "2025-10-23T00:02:52.000Z",
       "message": "feat: se volvio a agregar la carpeta adopcion, la funcion existe",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/a3d94c45bd06d03295cae4cc54cefabb88b52af1"
     },
     "stats": {
       "total": 49,
@@ -205,6 +205,25 @@
     },
     "coverage": 0,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Adrian Rodriguez",
+    "commit": {
+      "date": "2025-10-23T00:04:40.000Z",
+      "message": "feat: la funcion devuelve Solicitud Enviada Correctamente",
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }

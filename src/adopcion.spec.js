@@ -6,4 +6,9 @@ describe("Solicitud de adopción por perfil", () => {
         expect(typeof EnviarSolicitudAdopcion).toBe("function");
     });
 
+    it("Deberia retornar 'Solicitud Enviada Correctamente' al llamar la funcion", () => {
+        const resultado = EnviarSolicitudAdopcion();
+        expect(resultado).toBe("Solicitud Enviada Correctamente");
+    });
+
 });
