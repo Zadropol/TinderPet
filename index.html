@@ -2,9 +2,12 @@
 <html xml:lang="es">
   <head>
     <title>TinderPet</title>
+    <link rel="stylesheet" href="./style.css" />
     <meta charset="utf-8" />
   </head>
   <body>
+    
+
     <h1>Perfiles de mascotas</h1>
     <form id="perfil-form">
       <label for="nombre-mascota">Nombre de la mascota:</label>
@@ -15,10 +18,28 @@
       <input type="text" id="raza-mascota" />
       <label for="imagen-mascota">Imagen de la mascota:</label>
       <input type="text" id="imagen-mascota" />
+      <label for="especie-mascota">Especie de la mascota:</label>
+      <input type="text" id="especie-mascota" />
+      <label for="sexo-mascota">Sexo de la mascota:</label>
+      <input type="text" id="sexo-mascota" />
+      <label for="vacunas-mascota">Vacunas de la mascota:</label>
+      <input type="text" id="vacunas-mascota" />
       <input type="submit" value="crear" id="crear-button" />
     </form>
     <div id="resultado-div"></div>
 
+    <h1>Buscar mascota</h1>
+    <form id="buscar-form">
+      <label for="buscar-edad">Edad de la mascota:</label>
+      <input type="number" id="buscar-edad" />
+      <label for="buscar-raza">Raza de la mascota:</label>
+      <input type="text" id="buscar-raza" />
+      <label for="buscar-especie">Especie de la mascota:</label>
+      <input type="text" id="buscar-especie" />
+      <button type="submit">Buscar</button>
+    </form>
+    <div id="resultados-busqueda"></div>
+    <script type="module" src="./src/presenterBuscar.js"></script>
     <script type="module" src="./src/presenter.js"></script>
   </body>
 </html>
