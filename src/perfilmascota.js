@@ -7,6 +7,7 @@
  */
 function crearperfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
     const nuevoPerfil = {
+        id: `${Date.now()}-${Math.random().toString(36).slice(2,8)}`,
         nombre: nombre,
         edad: edad,
         raza: raza,

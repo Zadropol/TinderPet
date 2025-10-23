@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d7486032f958e5eeaa2a97debfdf431afb5e04ce",
     "author": "leitocam",
     "commit": {
       "date": "2025-10-23T01:26:35.000Z",
       "message": "Feat:Structure Mostrar_Detalles",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/d7486032f958e5eeaa2a97debfdf431afb5e04ce"
     },
     "stats": {
       "total": 0,
@@ -281,6 +281,25 @@
     },
     "coverage": 84.21,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "leitocam",
+    "commit": {
+      "date": "2025-10-23T02:22:17.000Z",
+      "message": "feat(detalles): implementa visualización y formateo de detalles de mascotas",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 399,
+      "additions": 364,
+      "deletions": 35,
+      "date": "2025-10-23"
+    },
+    "coverage": 82.93,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }

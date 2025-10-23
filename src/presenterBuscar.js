@@ -11,6 +11,10 @@ document.getElementById("buscar-form").addEventListener("submit", function(e) {
   });
   document.getElementById("resultados-busqueda").innerHTML =
     resultados.length
-      ? resultados.map(p => `<div>Nombre: ${p.nombre} - Edad: ${p.edad} años - Raza: ${p.raza}</div>`).join("")
+      ? resultados.map(p => `
+        <div class="resultado-item" data-id="${p.id ?? ''}">
+          <span>Nombre: ${p.nombre}</span> - <span>Edad: ${p.edad} años</span> - <span>Raza: ${p.raza}</span>
+          <button type="button" class="ver-detalles" data-id="${p.id ?? ''}">Ver detalles</button>
+        </div>`).join("")
       : "No se encontraron mascotas con esos datos.";
 });

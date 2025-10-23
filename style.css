@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/* Estilos base (placeholder para Parcel) */
+body { font-family: Arial, sans-serif; }
+#resultado-div, #resultados-busqueda, #detalle-mascota { margin-top: 12px; }
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f8ff;

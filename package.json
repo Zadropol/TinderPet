@@ -5,7 +5,7 @@
   "default": "index.html",
   "type": "module",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel serve index.html --no-cache",
     "build": "parcel build index.html",
     "test": "node ./script/tddScript.js",
     "cypress": "cypress open",
