@@ -228,16 +228,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "08ed69cf7688a7123c9c6c82a1156dc9b547acf4",
     "author": "Adrian Rodriguez",
     "commit": {
       "date": "2025-10-23T00:10:19.000Z",
       "message": "refactor: se aniade las modificaciones de PerfilMascota al Presenter",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/08ed69cf7688a7123c9c6c82a1156dc9b547acf4"
     },
     "stats": {
       "total": 16,
       "additions": 16,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Adrian Rodriguez",
+    "commit": {
+      "date": "2025-10-23T00:18:23.000Z",
+      "message": "test: se agregaron las pruebas de cypress",
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 39,
       "deletions": 0,
       "date": "2025-10-23"
     },
