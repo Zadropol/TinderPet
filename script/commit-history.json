@@ -3,18 +3,18 @@
     "sha": "HEAD",
     "author": "Adrian Rodriguez",
     "commit": {
-      "date": "2025-10-23T12:16:58.000Z",
-      "message": "fix:merge corregido",
+      "date": "2025-10-23T12:24:42.000Z",
+      "message": "fix: merge en Main",
       "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
     },
     "stats": {
-      "total": 20,
-      "additions": 19,
-      "deletions": 1,
+      "total": 270,
+      "additions": 265,
+      "deletions": 5,
       "date": "2025-10-23"
     },
-    "coverage": 72.73,
-    "test_count": 1,
+    "coverage": 100,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }
