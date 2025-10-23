@@ -1,16 +1,35 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "6e4cd586be8d27fd0c348e95086d7d651cbee40f",
     "author": "Adrian Rodriguez",
     "commit": {
       "date": "2025-10-23T03:44:45.000Z",
       "message": "Merge: Resuelto conflicto al fusionar Rama_Ale",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/6e4cd586be8d27fd0c348e95086d7d651cbee40f"
     },
     "stats": {
       "total": 202,
       "additions": 174,
       "deletions": 28,
+      "date": "2025-10-23"
+    },
+    "coverage": 75,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Adrian Rodriguez",
+    "commit": {
+      "date": "2025-10-23T04:10:14.000Z",
+      "message": "style: se cambio el disenio del boton de enviar solicitud, y su mensaje",
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+    },
+    "stats": {
+      "total": 35,
+      "additions": 34,
+      "deletions": 1,
       "date": "2025-10-23"
     },
     "coverage": 75,

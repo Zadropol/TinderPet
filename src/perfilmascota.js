@@ -36,7 +36,7 @@ function generarHTMLPerfiles(perfiles) {
                     Raza: ${perfil.raza}
                     Imagen: <img src="${perfil.imagen}" alt="${perfil.nombre}"/>
                     <button class="btn-solicitud">Enviar Solicitud</button>
-                    <p class="mensaje-solicitud"></p>
+                    <p class ="mensaje-solicitud"></p>
                 </div>`;
     }).join('');
 }

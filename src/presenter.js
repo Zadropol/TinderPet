@@ -28,6 +28,11 @@ function agregarEventosBotones() {
     boton.onclick = () => {
       const mensajeParrafo = boton.nextElementSibling;
       mensajeParrafo.textContent = EnviarSolicitudAdopcion();
+      mensajeParrafo.classList.add("mostrar");
+
+      setTimeout(() => {
+        mensajeParrafo.classList.remove("mostrar");
+      }, 3000);   
     };
   });
 }
