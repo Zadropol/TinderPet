@@ -13,14 +13,6 @@ document.getElementById("buscar-form").addEventListener("submit", function(e) {
   });
   document.getElementById("resultados-busqueda").innerHTML =
     resultados.length
-      ? resultados.map(p => `
-          <div class="tarjeta-mascota">
-            <h3>${p.nombre}</h3>
-            <p>Edad: ${p.edad} años</p>
-            <p>Raza: ${p.raza}</p>
-            <p>Especie: ${p.especie || ""}</p>
-            <img src="${p.imagen}" alt="${p.nombre}"/>
-          </div>
-        `).join("")
+      ? resultados.map(p => `<div>Nombre: ${p.nombre} - Edad: ${p.edad} años - Raza: ${p.raza}</div>`).join("")
       : "No se encontraron mascotas con esos datos.";
 });

@@ -134,58 +134,20 @@
   },
   {
     "sha": "HEAD",
-    "author": "lucianaaaaaaa",
-    "commit": {
-      "date": "2025-10-23T01:20:57.000Z",
-      "message": "feat(buscar): implementa búsqueda básica de mascotas por edad o razao especie y muestra el nombre,edad,raza, especie y foto de la mascota",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
-    },
-    "stats": {
-      "total": 97,
-      "additions": 71,
-      "deletions": 26,
-      "date": "2025-10-23"
-    },
-    "coverage": 86.96,
-    "test_count": 4,
-    "failed_tests": 0,
-    "conclusion": "success"
-  },
-  {
-    "sha": "6e4cd586be8d27fd0c348e95086d7d651cbee40f",
-    "author": "Adrian Rodriguez",
-    "commit": {
-      "date": "2025-10-23T03:44:45.000Z",
-      "message": "Merge: Resuelto conflicto al fusionar Rama_Ale",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/6e4cd586be8d27fd0c348e95086d7d651cbee40f"
-    },
-    "stats": {
-      "total": 202,
-      "additions": 174,
-      "deletions": 28,
-      "date": "2025-10-23"
-    },
-    "coverage": 75,
-    "test_count": 3,
-    "failed_tests": 0,
-    "conclusion": "success"
-  },
-  {
-    "sha": "HEAD",
     "author": "Alous12",
     "commit": {
-      "date": "2025-10-23T12:22:16.000Z",
-      "message": "Merge branch 'Rama_Adrian' of https://github.com/Zadropol/TinderPet into Rama_Ale",
+      "date": "2025-10-23T12:27:08.000Z",
+      "message": "Merge branch 'rama_leomostrar' of https://github.com/Zadropol/TinderPet into Rama_Ale",
       "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
     },
     "stats": {
-      "total": 140,
-      "additions": 112,
-      "deletions": 28,
+      "total": 369,
+      "additions": 327,
+      "deletions": 42,
       "date": "2025-10-23"
     },
-    "coverage": 87.5,
-    "test_count": 6,
+    "coverage": 84.78,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }
