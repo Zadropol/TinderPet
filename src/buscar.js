@@ -1,11 +1,12 @@
-document.getElementById("buscar-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  const edadBuscada = document.getElementById("buscar-edad").value;
+/**
+ * Busca mascotas por edad en el localStorage.
+ * @param {number|string} edadBuscada
+ * @returns {Array<Object>}
+ */
+function buscarPorEdad(edadBuscada) {
   const perfilesJSON = localStorage.getItem("perfilesMascotas");
   const perfiles = perfilesJSON ? JSON.parse(perfilesJSON) : [];
-  const resultados = perfiles.filter(p => String(p.edad) === String(edadBuscada));
-  document.getElementById("resultados-busqueda").innerHTML =
-    resultados.length
-      ? resultados.map(p => `<div>${p.nombre}</div>`).join("")
-      : "No se encontraron mascotas con esa edad.";
-});
+  return perfiles.filter(p => String(p.edad) === String(edadBuscada));
+}
+
+export { buscarPorEdad };
