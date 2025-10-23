@@ -1,3 +1,4 @@
+import { EnviarSolicitudAdopcion } from "./adopcion";
 import { crearperfil, cargarPerfilesGuardados } from "./perfilmascota";
 
 const name = document.querySelector("#nombre-mascota");
@@ -17,4 +18,19 @@ form.addEventListener("submit", (event) => {
   const ImagenMascota = imagen.value;
   divResultado.innerHTML = crearperfil(NombreMascota,EdadMascota,RazaMascota,ImagenMascota);
   form.reset();
+
+  agregarEventosBotones();
 });
+
+function agregarEventosBotones() {
+  const botones = document.querySelectorAll(".btn-solicitud");
+  botones.forEach((boton) => {
+    boton.onclick = () => {
+      const mensajeParrafo = boton.nextElementSibling;
+      mensajeParrafo.textContent = EnviarSolicitudAdopcion();
+    };
+  });
+}
+agregarEventosBotones();
+
+

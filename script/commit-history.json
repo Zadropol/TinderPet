@@ -209,16 +209,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "810667047c71f9a18557e105fec9be4fad99cd46",
     "author": "Adrian Rodriguez",
     "commit": {
       "date": "2025-10-23T00:04:40.000Z",
       "message": "feat: la funcion devuelve Solicitud Enviada Correctamente",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/810667047c71f9a18557e105fec9be4fad99cd46"
     },
     "stats": {
       "total": 6,
       "additions": 6,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Adrian Rodriguez",
+    "commit": {
+      "date": "2025-10-23T00:10:19.000Z",
+      "message": "refactor: se aniade las modificaciones de PerfilMascota al Presenter",
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
       "deletions": 0,
       "date": "2025-10-23"
     },
