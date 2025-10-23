@@ -133,17 +133,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "942369a3d729f65215617c98003458493a68ed40",
     "author": "Alous12",
     "commit": {
       "date": "2025-10-23T12:27:08.000Z",
       "message": "Merge branch 'rama_leomostrar' of https://github.com/Zadropol/TinderPet into Rama_Ale",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/942369a3d729f65215617c98003458493a68ed40"
     },
     "stats": {
       "total": 369,
       "additions": 327,
       "deletions": 42,
+      "date": "2025-10-23"
+    },
+    "coverage": 84.78,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-10-23T12:29:18.000Z",
+      "message": "Merge Rama_Luci, Rama_Adrian",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 0,
+      "deletions": 1,
       "date": "2025-10-23"
     },
     "coverage": 84.78,
