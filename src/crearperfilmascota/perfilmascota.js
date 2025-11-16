@@ -6,16 +6,7 @@
  * @returns {string}
  */
 function crearperfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
-    const nuevoPerfil = {
-        id: generarId(),
-        nombre: nombre,
-        edad: edad,
-        raza: raza,
-        imagen: imagen,
-        especie: especie,
-        sexo: sexo,
-        vacunas: vacunas
-    };
+    const nuevoPerfil = crearObjetoPerfil(nombre, edad, raza, imagen, especie, sexo, vacunas);
 
     let perfilesExistentes = obtenerPerfiles();
 
@@ -24,6 +15,19 @@ function crearperfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
     guardarPerfiles(perfilesExistentes);
 
     return generarHTMLPerfiles(perfilesExistentes);
+}
+
+function crearObjetoPerfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
+    return {
+        id: generarId(),
+        nombre,
+        edad,
+        raza,
+        imagen,
+        especie,
+        sexo,
+        vacunas
+    };
 }
 
 function generarId(){
