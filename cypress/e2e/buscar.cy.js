@@ -11,7 +11,7 @@ describe("Buscar mascotas por edad", () => {
 //      cy.get("#imagen-mascota").type(imageUrl);
 //      cy.get("#crear-button").click();
 //     cy.get("#buscar-edad").type("3");
-//     cy.get("#buscar-form button[type=submit]").click();
+//     cy.get("#buscar-form").submit();
 
 //     cy.get("#resultados-busqueda").should("exist");
 //   });
@@ -28,7 +28,7 @@ describe("Buscar mascotas por edad", () => {
 //     cy.get("#crear-button").click();
 
 //     cy.get("#buscar-raza").type("Pitbull");
-//     cy.get("#buscar-form button[type=submit]").click();
+//     cy.get("#buscar-form").submit();
 //     cy.get("#resultados-busqueda").should("contain", "Nombre: Firulais");
 //     cy.get("#resultados-busqueda").should("contain", "Edad: 3 años");
 //     cy.get("#resultados-busqueda").should("contain", "Raza: Pitbull");
@@ -45,10 +45,14 @@ it("debería buscar mascotas por especie y mostrar la tarjeta completa", () => {
   const imageUrl = "https://www.adnradio.cl/resizer/v2/GKT44IBMHRBXDGPLYLXI3BZGIQ.jpg?auth=31465077e25cf1b49fc838972bf461e863912597a0a39af28d0bc58ee97f0ab0&width=768&height=576&quality=70&smart=true";
   cy.get("#imagen-mascota").type(imageUrl);
   cy.get("#crear-button").click();
+  
+  // Espera que aparezca en resultado-div
+  cy.get("#resultado-div").should("contain", "Firulais");
 
   cy.get("#buscar-especie").type("Perro");
-  cy.get("#buscar-form button[type=submit]").click();
-  cy.get("#resultados-busqueda").should("contain", "Firulais");
+  cy.get("#buscar-form").submit();
+
+  cy.get("#resultados-busqueda", { timeout: 10000 }).should("contain", "Firulais");
   cy.get("#resultados-busqueda").should("contain", "Edad: 3 años");
   cy.get("#resultados-busqueda").should("contain", "Raza: Pitbull");
   cy.get("#resultados-busqueda").should("contain", "Especie: Perro");
