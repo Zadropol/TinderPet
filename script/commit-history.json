@@ -152,16 +152,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "58ee76319268b85054d839bd4aec88843e0b0f29",
     "author": "Alous12",
     "commit": {
       "date": "2025-11-16T23:18:48.000Z",
       "message": "refact: añade funcion crearObjeto perfil y reemplaza en crear perfil",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/58ee76319268b85054d839bd4aec88843e0b0f29"
     },
     "stats": {
       "total": 24,
       "additions": 14,
+      "deletions": 10,
+      "date": "2025-11-16"
+    },
+    "coverage": 86,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-11-16T23:24:41.000Z",
+      "message": "refact: añade funcion generar perfil en html aparte",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 15,
       "deletions": 10,
       "date": "2025-11-16"
     },
