@@ -1,10 +1,4 @@
-/**
- * @param {string} nombre
- * @param {number} edad
- * @param {string} raza
- * @param {string} imagen
- * @returns {string}
- */
+
 function crearperfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
     const nuevoPerfil = crearObjetoPerfil(nombre, edad, raza, imagen, especie, sexo, vacunas);
 
@@ -44,12 +38,6 @@ function guardarPerfiles(perfiles){
 }
 
 
-
-/**
- *
- * @param {Array<Object>} perfiles
- * @returns {string}
- */
 function generarHTMLPerfiles(perfiles) {
     return perfiles.map(generarPerfilenHTML).join('');
 }
@@ -66,9 +54,6 @@ function generarPerfilenHTML(perfil){
             </div>`;
 }
 
-/**
- * @returns {string}
- */
 function cargarPerfilesGuardados() {
     const perfilesExistentes = obtenerPerfiles();
     return generarHTMLPerfiles(perfilesExistentes);
