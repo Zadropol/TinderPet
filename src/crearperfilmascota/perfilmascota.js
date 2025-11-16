@@ -7,7 +7,7 @@
  */
 function crearperfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
     const nuevoPerfil = {
-        id: `${Date.now()}-${Math.random().toString(36).slice(2,8)}`,
+        id: generarId(),
         nombre: nombre,
         edad: edad,
         raza: raza,
@@ -25,6 +25,10 @@ function crearperfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
     localStorage.setItem('perfilesMascotas', JSON.stringify(perfilesExistentes));
 
     return generarHTMLPerfiles(perfilesExistentes);
+}
+
+function generarId(){
+    return `${Date.now()}-${Math.random().toString(36).slice(2,8)}`;
 }
 
 /**

@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e1554924449856708ca7cc650315728e185108b5",
     "author": "Alous12",
     "commit": {
       "date": "2025-11-16T23:02:17.000Z",
       "message": "merge con rama_luci",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/e1554924449856708ca7cc650315728e185108b5"
     },
     "stats": {
       "total": 156,
@@ -90,6 +90,25 @@
       "date": "2025-11-16"
     },
     "coverage": 84.78,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-11-16T23:10:01.000Z",
+      "message": "refact: añade funcion generar id y lo reemplaza en crear perfil",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 5,
+      "deletions": 1,
+      "date": "2025-11-16"
+    },
+    "coverage": 85.11,
     "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
