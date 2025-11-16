@@ -53,6 +53,10 @@ describe("Crear Perfil", () => {
     // expect(resultado).toContain("Raza: Pitbull");
     // expect(resultado).toContain(`<img src="${imageUrl}" alt="Firulais"/>`);
 
+    // it("Deberia poder ingresar las vacunas de la mascota", () => {
+    // const imageUrl = "https://www.adnradio.cl/2024/08/22/que-significa-firulais-el-popular-nombre-que-tienen-muchos-perros-en-el-mundo/";
+    // const resultado = crearperfil("Firulais", 3, "Pitbull", imageUrl, "Perro", "Macho", "Antirrábica, Parvovirus");
+
   it("Debería poder ingresar y mostrar una imagen de la mascota", () => {
     const imageUrl = "https://www.adnradio.cl/2024/08/22/que-significa-firulais-el-popular-nombre-que-tienen-muchos-perros-en-el-mundo/";
     const resultado = crearperfil("Firulais", 3, "Pitbull", imageUrl);
@@ -61,4 +65,5 @@ describe("Crear Perfil", () => {
     expect(resultado).toContain("Raza: Pitbull");
     expect(resultado).toContain(`<img src="${imageUrl}" alt="Firulais"/>`);
   });
+
 });
