@@ -70,9 +70,7 @@ function generarPerfilenHTML(perfil){
  * @returns {string}
  */
 function cargarPerfilesGuardados() {
-    const perfilesExistentesJSON = localStorage.getItem('perfilesMascotas');
-    const perfilesExistentes = perfilesExistentesJSON ? JSON.parse(perfilesExistentesJSON) : [];
-    
+    const perfilesExistentes = obtenerPerfiles();
     return generarHTMLPerfiles(perfilesExistentes);
 }
 

@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1b2c37ab4315a971fdb24ded7cdf99fc8e22c508",
     "author": "Alous12",
     "commit": {
       "date": "2025-11-16T23:24:41.000Z",
       "message": "refact: añade funcion generar perfil en html aparte",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/1b2c37ab4315a971fdb24ded7cdf99fc8e22c508"
     },
     "stats": {
       "total": 25,
@@ -185,6 +185,25 @@
       "date": "2025-11-16"
     },
     "coverage": 86,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-11-16T23:30:46.000Z",
+      "message": "refact: elimina inconsistencia de cargarperfiles guardados",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 1,
+      "deletions": 3,
+      "date": "2025-11-16"
+    },
+    "coverage": 87.76,
     "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
