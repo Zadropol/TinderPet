@@ -1,4 +1,4 @@
-import { crearperfil, cargarPerfilesGuardados } from "./perfilmascota";
+import { crearperfil, cargarPerfilesGuardados } from "./crearperfilmascota/perfilmascota.js";
 
 const name = document.querySelector("#nombre-mascota");
 const age = document.querySelector("#edad-mascota");
