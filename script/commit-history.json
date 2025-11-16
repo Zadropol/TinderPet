@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0853bd9ded3ef7c182ddbf56d461922e429b8e86",
     "author": "Alous12",
     "commit": {
       "date": "2025-11-16T23:10:01.000Z",
       "message": "refact: añade funcion generar id y lo reemplaza en crear perfil",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/0853bd9ded3ef7c182ddbf56d461922e429b8e86"
     },
     "stats": {
       "total": 6,
@@ -109,6 +109,25 @@
       "date": "2025-11-16"
     },
     "coverage": 85.11,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-11-16T23:13:28.000Z",
+      "message": "refact: añade funcion obtener perfiles y lo reemplaza en crear perfil",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 6,
+      "deletions": 2,
+      "date": "2025-11-16"
+    },
+    "coverage": 85.42,
     "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"

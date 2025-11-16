@@ -17,8 +17,7 @@ function crearperfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
         vacunas: vacunas
     };
 
-    const perfilesExistentesJSON = localStorage.getItem('perfilesMascotas');
-    let perfilesExistentes = perfilesExistentesJSON ? JSON.parse(perfilesExistentesJSON) : [];
+    let perfilesExistentes = obtenerPerfiles();
 
     perfilesExistentes.push(nuevoPerfil);
 
@@ -29,6 +28,11 @@ function crearperfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
 
 function generarId(){
     return `${Date.now()}-${Math.random().toString(36).slice(2,8)}`;
+}
+
+function obtenerPerfiles(){
+    const perfilesJSON = localStorage.getItem('perfilesMascotas');
+    return perfilesJSON ? JSON.parse(perfilesJSON) : [];
 }
 
 /**
