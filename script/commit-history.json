@@ -209,17 +209,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7e4817812886836da17793ef1b7c1ff1fcc3d4e9",
     "author": "Alous12",
     "commit": {
       "date": "2025-11-16T23:34:52.000Z",
       "message": "refact: elimina lienas de comentario innecesarias",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/7e4817812886836da17793ef1b7c1ff1fcc3d4e9"
     },
     "stats": {
       "total": 17,
       "additions": 1,
       "deletions": 16,
+      "date": "2025-11-16"
+    },
+    "coverage": 87.76,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-11-16T23:42:47.000Z",
+      "message": "refact: separa funciones en archivos deacuerdo a su tarea que cumplen, sin ningun cambio de logica",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 88,
+      "additions": 46,
+      "deletions": 42,
       "date": "2025-11-16"
     },
     "coverage": 87.76,
