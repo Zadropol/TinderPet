@@ -21,7 +21,7 @@ function crearperfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
 
     perfilesExistentes.push(nuevoPerfil);
 
-    localStorage.setItem('perfilesMascotas', JSON.stringify(perfilesExistentes));
+    guardarPerfiles(perfilesExistentes);
 
     return generarHTMLPerfiles(perfilesExistentes);
 }
@@ -33,6 +33,10 @@ function generarId(){
 function obtenerPerfiles(){
     const perfilesJSON = localStorage.getItem('perfilesMascotas');
     return perfilesJSON ? JSON.parse(perfilesJSON) : [];
+}
+
+function guardarPerfiles(perfiles){
+    localStorage.setItem('perfilesMascotas', JSON.stringify(perfiles));
 }
 
 /**
