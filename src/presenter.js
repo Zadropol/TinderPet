@@ -1,4 +1,5 @@
 import { crearperfil, cargarPerfilesGuardados } from "./perfilmascota";
+import { EnviarSolicitudAdopcion } from "./adopcion";
 
 const name = document.querySelector("#nombre-mascota");
 const age = document.querySelector("#edad-mascota");
@@ -10,7 +11,11 @@ const vacunas = document.querySelector("#vacunas-mascota");
 const form = document.querySelector("#perfil-form");
 const divResultado = document.querySelector("#resultado-div");
 
+// Mostrar perfiles guardados
 divResultado.innerHTML = cargarPerfilesGuardados();
+agregarEventosBotones();
+
+// Crear perfil
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -22,6 +27,31 @@ form.addEventListener("submit", (event) => {
   const SexoMascota = sexo.value;
   const VacunasMascota = vacunas.value;
 
-  divResultado.innerHTML = crearperfil(NombreMascota,EdadMascota,RazaMascota,ImagenMascota,EspecieMascota,SexoMascota,VacunasMascota);
+  divResultado.innerHTML = crearperfil(
+    NombreMascota,
+    EdadMascota,
+    RazaMascota,
+    ImagenMascota,
+    EspecieMascota,
+    SexoMascota,
+    VacunasMascota
+  );
+
   form.reset();
+  agregarEventosBotones(); // <-- IMPORTANTE
 });
+
+// --------------------------------------------------------------------------------------------------
+// FUNCIÓN QUE ACTIVA LOS BOTONES "ENVIAR SOLICITUD"
+// --------------------------------------------------------------------------------------------------
+function agregarEventosBotones() {
+  const botones = document.querySelectorAll(".btn-solicitud");
+
+  botones.forEach((boton) => {
+    boton.onclick = () => {
+      const mensajeParrafo = boton.nextElementSibling;
+      mensajeParrafo.textContent = EnviarSolicitudAdopcion();
+      mensajeParrafo.classList.add("mostrar"); // Necesario para que aparezca
+    };
+  });
+}
