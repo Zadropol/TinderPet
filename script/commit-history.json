@@ -1,16 +1,35 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "606db811c84ae2c9d92de1b998645a98a2778b82",
     "author": "lucianaaaaaaa",
     "commit": {
       "date": "2025-11-20T13:08:28.000Z",
       "message": "merge: rama luci y Ale",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/606db811c84ae2c9d92de1b998645a98a2778b82"
     },
     "stats": {
       "total": 60,
       "additions": 55,
       "deletions": 5,
+      "date": "2025-11-20"
+    },
+    "coverage": 87.76,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "lucianaaaaaaa",
+    "commit": {
+      "date": "2025-11-20T13:12:48.000Z",
+      "message": "fix: merge",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
       "date": "2025-11-20"
     },
     "coverage": 87.76,

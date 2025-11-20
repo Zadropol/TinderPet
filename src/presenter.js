@@ -1,4 +1,4 @@
-import { crearperfil, cargarPerfilesGuardados } from "./perfilmascota";
+import { crearperfil, cargarPerfilesGuardados } from "./crearperfilmascota/perfilmascota";
 import { EnviarSolicitudAdopcion } from "./adopcion";
 
 const name = document.querySelector("#nombre-mascota");
