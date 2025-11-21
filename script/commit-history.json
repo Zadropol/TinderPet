@@ -57,17 +57,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1f76f19a5282059a448500d47ad07e0efeae4dce",
     "author": "lucianaaaaaaa",
     "commit": {
       "date": "2025-11-21T22:41:07.000Z",
       "message": "refactor(presenter): unifica creación, búsqueda y detalles en un solo presenter aplicando clean code",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/1f76f19a5282059a448500d47ad07e0efeae4dce"
     },
     "stats": {
       "total": 365,
       "additions": 149,
       "deletions": 216,
+      "date": "2025-11-21"
+    },
+    "coverage": 87.76,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "lucianaaaaaaa",
+    "commit": {
+      "date": "2025-11-21T22:47:51.000Z",
+      "message": "refactor(presenter): muestra detalles desde perfiles publicados",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 101,
+      "additions": 39,
+      "deletions": 62,
       "date": "2025-11-21"
     },
     "coverage": 87.76,

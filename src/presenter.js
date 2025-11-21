@@ -34,18 +34,33 @@ function asegurarIds(lista) {
 }
 
 // ----------------------------- CREACIÓN PERFIL -----------------------------
+function renderPublicados() {
+  const salida = document.querySelector("#resultado-div");
+  if (!salida) return;
+  const repo = leerRepositorio();
+  salida.innerHTML = repo.length
+    ? repo.map(p => `
+      <div class="tarjeta-mascota" data-id="${p.id}">
+        <h3>${p.nombre}</h3>
+        <p>Edad: ${p.edad ?? ""} años</p>
+        <p>Raza: ${p.raza ?? ""}</p>
+        <p>Especie: ${p.especie ?? ""}</p>
+        ${p.imagen ? `<img src="${p.imagen}" alt="${p.nombre}">` : ""}
+        <button type="button" class="ver-detalles-publicado" data-id="${p.id}">Ver detalles</button>
+      </div>
+    `).join("")
+    : "No hay perfiles publicados.";
+}
+
 function initCreacion() {
   const form = document.querySelector("#perfil-form");
-  const salida = document.querySelector("#resultado-div");
-  if (!form || !salida) return;
-
-  // Render inicial (perfiles previos)
-  salida.innerHTML = cargarPerfilesGuardados();
-  activarBotonesSolicitud();
+  if (!form) return;
+  renderPublicados();
 
   form.addEventListener("submit", e => {
     e.preventDefault();
-    const perfilHTML = crearperfil(
+    // crearperfil ya debería guardar en localStorage; si no, ajustar allí.
+    crearperfil(
       form.querySelector("#nombre-mascota")?.value,
       form.querySelector("#edad-mascota")?.value,
       form.querySelector("#raza-mascota")?.value,
@@ -54,21 +69,8 @@ function initCreacion() {
       form.querySelector("#sexo-mascota")?.value,
       form.querySelector("#vacunas-mascota")?.value
     );
-    salida.innerHTML = perfilHTML;
     form.reset();
-    activarBotonesSolicitud();
-  });
-}
-
-function activarBotonesSolicitud() {
-  document.querySelectorAll(".btn-solicitud").forEach(btn => {
-    btn.onclick = () => {
-      const msg = btn.nextElementSibling;
-      if (msg) {
-        msg.textContent = EnviarSolicitudAdopcion();
-        msg.classList.add("mostrar");
-      }
-    };
+    renderPublicados();
   });
 }
 
@@ -152,5 +154,18 @@ document.addEventListener("DOMContentLoaded", () => {
   initCreacion();
   initBusqueda();
   handleHash();
+
+  // Delegación para ver detalles en publicados
+  const publicados = document.querySelector("#resultado-div");
+  if (publicados) {
+    publicados.addEventListener("click", e => {
+      const btn = e.target.closest(".ver-detalles-publicado");
+      if (btn) {
+        const id = btn.getAttribute("data-id");
+        mostrarDetalles(id);
+      }
+    });
+  }
+
   window.addEventListener("hashchange", handleHash);
 });
