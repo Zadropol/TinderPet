@@ -22,8 +22,11 @@ describe("Ver detalles de mascota - ATDD", () => {
     cy.get("#buscar-raza").type("Pitbull");
     cy.get("#buscar-form button[type=submit]").click();
 
-    // Hacer click en Ver detalles del primer resultado
-    cy.get("#resultados-busqueda .ver-detalles").first().click();
+    // Esperar a que se renderice el resultado con el botón
+    cy.get("#resultados-busqueda .ver-detalles", { timeout: 8000 })
+      .first()
+      .should("be.visible")
+      .click();
 
     // Verificar que el contenedor de detalles muestre los datos
     cy.get("#detalle-mascota").should("exist");
