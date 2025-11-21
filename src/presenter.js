@@ -1,6 +1,7 @@
 import { crearperfil, cargarPerfilesGuardados } from "./crearperfilmascota/perfilmascota";
 import { EnviarSolicitudAdopcion } from "./adopcion";
 import { renderDetalles, obtenerMascotaPorId } from "./mostraDetalles";
+import { perfilAHTML } from "./crearperfilmascota/perfilesenHTML.js";
 
 // ----------------------------- REPOSITORIO -----------------------------
 const STORAGE_KEY = "perfilesMascotas";
@@ -39,16 +40,7 @@ function renderPublicados() {
   if (!salida) return;
   const repo = leerRepositorio();
   salida.innerHTML = repo.length
-    ? repo.map(p => `
-      <div class="tarjeta-mascota" data-id="${p.id}">
-        <h3>${p.nombre}</h3>
-        <p>Edad: ${p.edad ?? ""} años</p>
-        <p>Raza: ${p.raza ?? ""}</p>
-        <p>Especie: ${p.especie ?? ""}</p>
-        ${p.imagen ? `<img src="${p.imagen}" alt="${p.nombre}">` : ""}
-        <button type="button" class="ver-detalles-publicado" data-id="${p.id}">Ver detalles</button>
-      </div>
-    `).join("")
+    ? repo.map(perfilAHTML).join("")
     : "No hay perfiles publicados.";
 }
 
@@ -91,17 +83,7 @@ function renderResultados(resultados) {
   const cont = document.querySelector("#resultados-busqueda");
   if (!cont) return;
   cont.innerHTML = resultados.length
-    ? resultados.map(p => `
-      <div class="tarjeta-mascota" data-id="${p.id}">
-        <h3>${p.nombre}</h3>
-        <p>Edad: ${p.edad} años</p>
-        <p>Raza: ${p.raza || ""}</p>
-        <p>Especie: ${p.especie || ""}</p>
-        <p>Sexo: ${p.sexo || ""}</p>
-        <p>Vacunas: ${p.vacunas || ""}</p>
-        ${p.imagen ? `<img src="${p.imagen}" alt="${p.nombre}">` : ""}
-        <button type="button" class="ver-detalles" data-id="${p.id}">Ver detalles</button>
-      </div>`).join("")
+    ? resultados.map(perfilAHTML).join("")
     : "No se encontraron mascotas con esos datos.";
 }
 
