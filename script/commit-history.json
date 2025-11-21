@@ -133,17 +133,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f57c2e2914b39c3939288cc1898261847505075e",
     "author": "lucianaaaaaaa",
     "commit": {
       "date": "2025-11-21T23:31:07.000Z",
       "message": "refact: creacion de carpeta mostrardetalles",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/f57c2e2914b39c3939288cc1898261847505075e"
     },
     "stats": {
       "total": 0,
       "additions": 0,
       "deletions": 0,
+      "date": "2025-11-21"
+    },
+    "coverage": 70.69,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "lucianaaaaaaa",
+    "commit": {
+      "date": "2025-11-21T23:40:08.000Z",
+      "message": "feat(adopcion): agrega botones de solicitud y mensajes por perfil para pruebas Cypress",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 44,
+      "additions": 34,
+      "deletions": 10,
       "date": "2025-11-21"
     },
     "coverage": 70.69,

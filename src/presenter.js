@@ -1,6 +1,6 @@
 import { crearperfil, cargarPerfilesGuardados } from "./crearperfilmascota/perfilmascota";
 import { EnviarSolicitudAdopcion } from "./adopcion";
-import { renderDetalles, obtenerMascotaPorId } from "./mostraDetalles";
+import { renderDetalles, obtenerMascotaPorId } from "./mostrardetallesmascota/mostraDetalles.js";
 import { perfilAHTML } from "./crearperfilmascota/perfilesenHTML.js";
 
 // ----------------------------- REPOSITORIO -----------------------------
@@ -146,14 +146,34 @@ document.addEventListener("DOMContentLoaded", () => {
   initBusqueda();
   handleHash();
 
-  // Delegación para ver detalles en publicados
   const publicados = document.querySelector("#resultado-div");
   if (publicados) {
     publicados.addEventListener("click", e => {
-      const btn = e.target.closest(".ver-detalles-publicado");
-      if (btn) {
-        const id = btn.getAttribute("data-id");
+      const btnDetalles = e.target.closest(".ver-detalles");
+      if (btnDetalles) {
+        const id = btnDetalles.getAttribute("data-id");
         mostrarDetalles(id);
+      }
+      const btnSolicitud = e.target.closest(".btn-solicitud");
+      if (btnSolicitud) {
+        const msg = btnSolicitud.nextElementSibling;
+        if (msg) msg.textContent = EnviarSolicitudAdopcion();
+      }
+    });
+  }
+
+  const resultados = document.querySelector("#resultados-busqueda");
+  if (resultados) {
+    resultados.addEventListener("click", e => {
+      const btnDetalles = e.target.closest(".ver-detalles");
+      if (btnDetalles) {
+        const id = btnDetalles.getAttribute("data-id");
+        mostrarDetalles(id);
+      }
+      const btnSolicitud = e.target.closest(".btn-solicitud");
+      if (btnSolicitud) {
+        const msg = btnSolicitud.nextElementSibling;
+        if (msg) msg.textContent = EnviarSolicitudAdopcion();
       }
     });
   }

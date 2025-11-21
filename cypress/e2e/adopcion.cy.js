@@ -21,18 +21,20 @@ describe("Flujo completo de adopción con múltiples perfiles", () => {
     // Click en primer perfil
     cy.get(".perfil").eq(0).within(() => {
       cy.get(".btn-solicitud").click();
-      cy.get(".mensaje-solicitud").should("contain.text", "Solicitud enviada correctamente");
+      cy.get(".mensaje-solicitud").should("contain.text", "Solicitud Enviada Correctamente");
     });
 
     // Verificar que el segundo perfil no tenga mensaje aún
     cy.get(".perfil").eq(1).within(() => {
       cy.get(".mensaje-solicitud").should("have.text", "");
+      cy.get(".btn-solicitud").click();
+      cy.get(".mensaje-solicitud").should("contain.text", "Solicitud Enviada Correctamente");
     });
 
     // Click en segundo perfil
     cy.get(".perfil").eq(1).within(() => {
       cy.get(".btn-solicitud").click();
-      cy.get(".mensaje-solicitud").should("contain.text", "Solicitud enviada correctamente");
+      cy.get(".mensaje-solicitud").should("contain.text", "Solicitud Enviada Correctamente");
     });
   });
 });
