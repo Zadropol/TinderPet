@@ -38,17 +38,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "134845e7bae6149b941a27cdf1db1bc8f657b4ff",
     "author": "lucianaaaaaaa",
     "commit": {
       "date": "2025-11-21T22:34:56.000Z",
       "message": "refact: eliminacion de archivos vacios y creacion de carpeta buscar",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/134845e7bae6149b941a27cdf1db1bc8f657b4ff"
     },
     "stats": {
       "total": 0,
       "additions": 0,
       "deletions": 0,
+      "date": "2025-11-21"
+    },
+    "coverage": 87.76,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "lucianaaaaaaa",
+    "commit": {
+      "date": "2025-11-21T22:41:07.000Z",
+      "message": "refactor(presenter): unifica creación, búsqueda y detalles en un solo presenter aplicando clean code",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 365,
+      "additions": 149,
+      "deletions": 216,
       "date": "2025-11-21"
     },
     "coverage": 87.76,
