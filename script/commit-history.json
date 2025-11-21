@@ -114,17 +114,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0bba3e4d8833c73dc7ea639cacea67a3f165aadb",
     "author": "lucianaaaaaaa",
     "commit": {
       "date": "2025-11-21T23:20:55.000Z",
       "message": "test(detalles): ATDD muestra detalles con botón ver-detalles y data-testid en resultados",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/0bba3e4d8833c73dc7ea639cacea67a3f165aadb"
     },
     "stats": {
       "total": 19,
       "additions": 16,
       "deletions": 3,
+      "date": "2025-11-21"
+    },
+    "coverage": 70.69,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "lucianaaaaaaa",
+    "commit": {
+      "date": "2025-11-21T23:31:07.000Z",
+      "message": "refact: creacion de carpeta mostrardetalles",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
       "date": "2025-11-21"
     },
     "coverage": 70.69,
