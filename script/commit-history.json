@@ -19,18 +19,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8a9d84ffc859c408a7e7b38bc2ae0a5c49fe757d",
     "author": "Adrian Rodriguez",
     "commit": {
       "date": "2025-10-23T04:10:14.000Z",
       "message": "style: se cambio el disenio del boton de enviar solicitud, y su mensaje",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/8a9d84ffc859c408a7e7b38bc2ae0a5c49fe757d"
     },
     "stats": {
       "total": 35,
       "additions": 34,
       "deletions": 1,
       "date": "2025-10-23"
+    },
+    "coverage": 75,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Zadropol",
+    "commit": {
+      "date": "2025-11-22T16:37:15.000Z",
+      "message": "feat: conexion a Bd en Neon",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 548,
+      "additions": 518,
+      "deletions": 30,
+      "date": "2025-11-22"
     },
     "coverage": 75,
     "test_count": 3,

@@ -29,6 +29,9 @@
     "parcel": "^2.12.0"
   },
   "dependencies": {
-    "parcel-jest-base": "file:"
+    "@neondatabase/serverless": "^1.0.2",
+    "dotenv": "^17.2.3",
+    "parcel-jest-base": "file:",
+    "pg": "^8.16.3"
   }
 }
