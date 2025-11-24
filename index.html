@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html xml:lang="es">
+<html lang="es">
   <head>
+    <meta charset="utf-8" />
     <title>TinderPet</title>
     <link rel="stylesheet" href="./style.css" />
-    <meta charset="utf-8" />
   </head>
   <body>
     <h1>Perfiles de mascotas</h1>
     <form id="perfil-form">
-      <label for="nombre-mascota">Nombre de la mascota:</label>
-      <input type="text" id="nombre-mascota" />
-      <label for="edad-mascota">Edad de la mascota:</label>
-      <input type="number" id="edad-mascota" />
-      <label for="raza-mascota">Raza de la mascota:</label>
-      <input type="text" id="raza-mascota" />
-      <label for="imagen-mascota">Imagen de la mascota:</label>
-      <input type="text" id="imagen-mascota" />
-      <input type="submit" value="crear" id="crear-button" />
+      <label>Nombre:</label>
+      <input id="nombre-mascota" type="text" />
+      <label>Edad:</label>
+      <input id="edad-mascota" type="number" />
+      <label>Raza:</label>
+      <input id="raza-mascota" type="text" />
+      <label>Especie:</label>
+      <input id="especie-mascota" type="text" />
+      <label>Sexo:</label>
+      <input id="sexo-mascota" type="text" />
+      <label>Vacunas:</label>
+      <input id="vacunas-mascota" type="text" />
+      <label>Imagen:</label>
+      <input id="imagen-mascota" type="text" />
+      <button id="crear-button" type="submit">Crear</button>
     </form>
     <div id="resultado-div"></div>
+
+    <h2>Detalle de mascota</h2>
+    <div id="detalle-mascota"></div>
+
+    <h1>Buscar mascota</h1>
+    <form id="buscar-form">
+      <label>Edad:</label>
+      <input id="buscar-edad" type="number" />
+      <label>Raza:</label>
+      <input id="buscar-raza" type="text" />
+      <label>Especie:</label>
+      <input id="buscar-especie" type="text" />
+      <button type="submit">Buscar</button>
+    </form>
+    <div id="resultados-busqueda"></div>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>

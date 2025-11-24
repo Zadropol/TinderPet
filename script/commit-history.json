@@ -1,58 +1,20 @@
 [
   {
-    "sha": "6e4cd586be8d27fd0c348e95086d7d651cbee40f",
-    "author": "Adrian Rodriguez",
-    "commit": {
-      "date": "2025-10-23T03:44:45.000Z",
-      "message": "Merge: Resuelto conflicto al fusionar Rama_Ale",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/6e4cd586be8d27fd0c348e95086d7d651cbee40f"
-    },
-    "stats": {
-      "total": 202,
-      "additions": 174,
-      "deletions": 28,
-      "date": "2025-10-23"
-    },
-    "coverage": 75,
-    "test_count": 3,
-    "failed_tests": 0,
-    "conclusion": "success"
-  },
-  {
-    "sha": "8a9d84ffc859c408a7e7b38bc2ae0a5c49fe757d",
-    "author": "Adrian Rodriguez",
-    "commit": {
-      "date": "2025-10-23T04:10:14.000Z",
-      "message": "style: se cambio el disenio del boton de enviar solicitud, y su mensaje",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/8a9d84ffc859c408a7e7b38bc2ae0a5c49fe757d"
-    },
-    "stats": {
-      "total": 35,
-      "additions": 34,
-      "deletions": 1,
-      "date": "2025-10-23"
-    },
-    "coverage": 75,
-    "test_count": 3,
-    "failed_tests": 0,
-    "conclusion": "success"
-  },
-  {
     "sha": "HEAD",
     "author": "Zadropol",
     "commit": {
-      "date": "2025-11-22T16:37:15.000Z",
-      "message": "feat: conexion a Bd en Neon",
+      "date": "2025-11-24T01:10:39.000Z",
+      "message": "fix:resolviendo conflictos",
       "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
     },
     "stats": {
-      "total": 548,
-      "additions": 518,
-      "deletions": 30,
-      "date": "2025-11-22"
+      "total": 901,
+      "additions": 758,
+      "deletions": 143,
+      "date": "2025-11-24"
     },
-    "coverage": 75,
-    "test_count": 3,
+    "coverage": 70.69,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/* Estilos base (placeholder para Parcel) */
+body { font-family: Arial, sans-serif; }
+#resultado-div, #resultados-busqueda, #detalle-mascota { margin-top: 12px; }
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f8ff;
@@ -94,7 +98,9 @@ form input[type="submit"]:hover {
   margin-bottom: 10px;
   color: #777;
 }
-  .btn-solicitud {
+
+.btn-solicitud 
+{
   margin-top: 10px;
   background: linear-gradient(135deg, #ff7a00, #ff3c3c);
   color: white;
