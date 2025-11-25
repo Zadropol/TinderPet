@@ -342,16 +342,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "83febcf96d4d0e14001ed88f531822f7bcc0af01",
     "author": "leitocam",
     "commit": {
       "date": "2025-11-25T04:12:39.000Z",
       "message": "style(ui): mejora el aspecto visual del área de detalles de mascota",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/83febcf96d4d0e14001ed88f531822f7bcc0af01"
     },
     "stats": {
       "total": 68,
       "additions": 68,
+      "deletions": 0,
+      "date": "2025-11-25"
+    },
+    "coverage": 70.69,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "leitocam",
+    "commit": {
+      "date": "2025-11-25T04:38:19.000Z",
+      "message": "chore(git): ignora screenshots de Cypress",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 1,
       "deletions": 0,
       "date": "2025-11-25"
     },
