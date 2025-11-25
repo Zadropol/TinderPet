@@ -1,16 +1,27 @@
-function generarHTMLPerfiles(perfiles) {
-    return perfiles.map(generarPerfilenHTML).join('');
+// Genera HTML de un perfil individual
+export function perfilAHTML(p) {
+  if (!p) return "";
+  return `
+  <div class="perfil tarjeta-mascota" data-id="${p.id || ""}">
+    <h3>${p.nombre || ""}</h3>
+    <p>Edad: ${p.edad ?? ""} años</p>
+    <p>Raza: ${p.raza || ""}</p>
+    <p>Especie: ${p.especie || ""}</p>
+    <p>Sexo: ${p.sexo || ""}</p>
+    <p>Vacunas: ${p.vacunas || ""}</p>
+    ${p.imagen ? `<img src="${p.imagen}" alt="${p.nombre}">` : ""}
+    <button type="button" class="ver-detalles" data-id="${p.id || ""}">Ver detalles</button>
+    <button type="button" class="btn-solicitud" data-id="${p.id || ""}">Enviar Solicitud</button>
+    <span class="mensaje-solicitud"></span>
+  </div>`;
 }
 
-function generarPerfilenHTML(perfil){
-    return `<div>
-                Nombre: ${perfil.nombre}
-                Edad: ${perfil.edad} años
-                Raza: ${perfil.raza}
-                Imagen: <img src="${perfil.imagen}" alt="${perfil.nombre}"/>
-                <button class="btn-solicitud">Enviar Solicitud</button>
-                <p class="mensaje-solicitud"></p>
-            </div>`;
+// Genera HTML de múltiples perfiles
+export function generarHTMLPerfiles(perfiles = []) {
+  return perfiles.map(perfilAHTML).join("");
 }
 
-export { generarHTMLPerfiles, generarPerfilenHTML };
+// Alias para compatibilidad previa (un perfil)
+export function generarPerfilenHTML(perfil) {
+  return perfilAHTML(perfil);
+}
