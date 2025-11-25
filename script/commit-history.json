@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "6ef4c2702b370b66dfe35c3a2fb4504115c001cc",
     "author": "Zadropol",
     "commit": {
       "date": "2025-11-24T01:10:39.000Z",
       "message": "fix:resolviendo conflictos",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/6ef4c2702b370b66dfe35c3a2fb4504115c001cc"
     },
     "stats": {
       "total": 901,
@@ -17,5 +17,24 @@
     "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Zadropol",
+    "commit": {
+      "date": "2025-11-25T01:19:19.000Z",
+      "message": "fix: correccion de otros conflictos",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 129,
+      "additions": 56,
+      "deletions": 73,
+      "date": "2025-11-25"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
   }
 ]

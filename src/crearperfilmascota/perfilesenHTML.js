@@ -11,8 +11,8 @@ export function perfilAHTML(p) {
     <p>Vacunas: ${p.vacunas || ""}</p>
     ${p.imagen ? `<img src="${p.imagen}" alt="${p.nombre}">` : ""}
     <button type="button" class="ver-detalles" data-id="${p.id || ""}">Ver detalles</button>
-    <button type="button" class="btn-solicitud" data-id="${p.id || ""}">Enviar Solicitud</button>
-    <span class="mensaje-solicitud"></span>
+    <button type= "button" class="btn-solicitud">Enviar Solicitud</button>
+    <p class ="mensaje-solicitud"></p>
   </div>`;
 }
 

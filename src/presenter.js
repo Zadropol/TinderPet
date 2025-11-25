@@ -1,5 +1,5 @@
 import { crearperfil, cargarPerfilesGuardados } from "./crearperfilmascota/perfilmascota";
-import { EnviarSolicitudAdopcion } from "./adopcion";
+import { EnviarSolicitudAdopcion } from "./adopcion"
 import { renderDetalles, obtenerMascotaPorId } from "./mostrardetallesmascota/mostraDetalles.js";
 import { perfilAHTML } from "./crearperfilmascota/perfilesenHTML.js";
 
@@ -51,7 +51,6 @@ function initCreacion() {
 
   form.addEventListener("submit", e => {
     e.preventDefault();
-    // crearperfil ya debería guardar en localStorage; si no, ajustar allí.
     crearperfil(
       form.querySelector("#nombre-mascota")?.value,
       form.querySelector("#edad-mascota")?.value,
@@ -140,41 +139,61 @@ function handleHash() {
   if (m) mostrarDetalles(m[1]);
 }
 
+// ----------------------------- MANEJADOR DE SOLICITUD (REUTILIZABLE) -----------------------------
+function manejarSolicitud(e) {
+  const btnSolicitud = e.target.closest(".btn-solicitud");
+  if (btnSolicitud) {
+    const msg = btnSolicitud.parentElement.querySelector(".mensaje-solicitud");
+    if (msg) {
+      msg.textContent = EnviarSolicitudAdopcion();
+      msg.style.display = "block";
+      
+      // Opcional: ocultar el mensaje después de 5 segundos
+      setTimeout(() => {
+        msg.textContent = "";
+        msg.style.display = "none";
+      }, 5000);
+    }
+  }
+}
+
+function manejarDetalles(e) {
+  const btnDetalles = e.target.closest(".ver-detalles");
+  if (btnDetalles) {
+    const id = btnDetalles.getAttribute("data-id");
+    if (id) mostrarDetalles(id);
+  }
+}
+
 // ----------------------------- INIT -----------------------------
 document.addEventListener("DOMContentLoaded", () => {
   initCreacion();
   initBusqueda();
   handleHash();
 
+  // Event listeners para perfiles publicados
   const publicados = document.querySelector("#resultado-div");
   if (publicados) {
     publicados.addEventListener("click", e => {
-      const btnDetalles = e.target.closest(".ver-detalles");
-      if (btnDetalles) {
-        const id = btnDetalles.getAttribute("data-id");
-        mostrarDetalles(id);
-      }
-      const btnSolicitud = e.target.closest(".btn-solicitud");
-      if (btnSolicitud) {
-        const msg = btnSolicitud.nextElementSibling;
-        if (msg) msg.textContent = EnviarSolicitudAdopcion();
-      }
+      manejarDetalles(e);
+      manejarSolicitud(e);
     });
   }
 
+  // Event listeners para resultados de búsqueda
   const resultados = document.querySelector("#resultados-busqueda");
   if (resultados) {
     resultados.addEventListener("click", e => {
-      const btnDetalles = e.target.closest(".ver-detalles");
-      if (btnDetalles) {
-        const id = btnDetalles.getAttribute("data-id");
-        mostrarDetalles(id);
-      }
-      const btnSolicitud = e.target.closest(".btn-solicitud");
-      if (btnSolicitud) {
-        const msg = btnSolicitud.nextElementSibling;
-        if (msg) msg.textContent = EnviarSolicitudAdopcion();
-      }
+      manejarDetalles(e);
+      manejarSolicitud(e);
+    });
+  }
+
+  // ⭐ NUEVO: Event listener para el contenedor de detalles
+  const detalles = document.querySelector("#detalle-mascota");
+  if (detalles) {
+    detalles.addEventListener("click", e => {
+      manejarSolicitud(e);
     });
   }
 
