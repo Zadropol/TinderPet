@@ -1,59 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <title>TinderPet</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header class="tp-header">
-      <span class="tp-title">TinderPet</span>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐾 TinderPet - Adopta con Amor</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <h1>🐾 TinderPet</h1>
+    <p>Conectando corazones con patitas en Bolivia</p>
+  </header>
 
-    <nav>
-      <button data-view="perfiles">Perfiles</button>
-      <button data-view="buscar">Buscar</button>
-    </nav>
-
-    <section id="vista-perfiles" data-view-section="perfiles" class="vista-activa">
-      <h1>Perfiles de mascotas</h1>
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    
+    <!-- SECCIÓN: CREAR PERFIL -->
+    <section class="form-container">
+      <h2>📝 Registra una Mascota</h2>
       <form id="perfil-form">
-        <label>Nombre:</label>
-        <input id="nombre-mascota" type="text" />
-        <label>Edad:</label>
-        <input id="edad-mascota" type="number" />
-        <label>Raza:</label>
-        <input id="raza-mascota" type="text" />
-        <label>Especie:</label>
-        <input id="especie-mascota" type="text" />
-        <label>Sexo:</label>
-        <input id="sexo-mascota" type="text" />
-        <label>Vacunas:</label>
-        <input id="vacunas-mascota" type="text" />
-        <label>Imagen:</label>
-        <input id="imagen-mascota" type="text" />
-        <button id="crear-button" type="submit">Crear</button>
-      </form>
-      <div id="resultado-div"></div>
+        <div class="form-group">
+          <label for="nombre-mascota">Nombre *</label>
+          <input type="text" id="nombre-mascota" placeholder="Ej: Luna, Max, Mimi..." required>
+        </div>
 
-      <h2>Detalle de mascota</h2>
-      <div id="detalle-mascota"></div>
+        <div class="form-group">
+          <label for="edad-mascota">Edad (años) *</label>
+          <input type="number" id="edad-mascota" placeholder="Ej: 2" min="0" max="30" required>
+        </div>
+
+        <div class="form-group">
+          <label for="especie-mascota">Especie *</label>
+          <select id="especie-mascota" required>
+            <option value="">Selecciona una especie</option>
+            <option value="Perro">🐕 Perro</option>
+            <option value="Gato">🐈 Gato</option>
+            <option value="Conejo">🐰 Conejo</option>
+            <option value="Ave">🐦 Ave</option>
+            <option value="Otro">🐾 Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="raza-mascota">Raza</label>
+          <input type="text" id="raza-mascota" placeholder="Ej: Mestizo, Labrador, Siamés...">
+        </div>
+
+        <div class="form-group">
+          <label for="sexo-mascota">Sexo</label>
+          <select id="sexo-mascota">
+            <option value="">Selecciona</option>
+            <option value="Macho">♂ Macho</option>
+            <option value="Hembra">♀ Hembra</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="vacunas-mascota">Vacunas</label>
+          <input type="text" id="vacunas-mascota" placeholder="Ej: Al día, Rabia, Parvovirus...">
+        </div>
+
+        <div class="form-group">
+          <label for="imagen-mascota">URL de la imagen</label>
+          <input type="url" id="imagen-mascota" placeholder="https://ejemplo.com/imagen.jpg">
+        </div>
+
+        <button type="submit" class="btn btn-enviar" id="crear-button">
+          <span>✨ Crear Perfil</span>
+        </button>
+      </form>
     </section>
 
-    <section id="vista-buscar" data-view-section="buscar">
-      <h1>Buscar mascota</h1>
+    <!-- SECCIÓN: BUSCAR MASCOTAS -->
+    <section class="form-container">
+      <h2>🔍 Buscar Mascotas</h2>
       <form id="buscar-form">
-        <label>Edad:</label>
-        <input id="buscar-edad" type="number" />
-        <label>Raza:</label>
-        <input id="buscar-raza" type="text" />
-        <label>Especie:</label>
-        <input id="buscar-especie" type="text" />
-        <button type="submit">Buscar</button>
+        <div class="form-group">
+          <label for="buscar-especie">Especie</label>
+          <select id="buscar-especie">
+            <option value="">Todas las especies</option>
+            <option value="Perro">🐕 Perro</option>
+            <option value="Gato">🐈 Gato</option>
+            <option value="Conejo">🐰 Conejo</option>
+            <option value="Ave">🐦 Ave</option>
+            <option value="Otro">🐾 Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="buscar-edad">Edad (años)</label>
+          <input type="number" id="buscar-edad" placeholder="Ej: 2" min="0">
+        </div>
+
+        <div class="form-group">
+          <label for="buscar-raza">Raza</label>
+          <input type="text" id="buscar-raza" placeholder="Ej: Labrador, Siamés...">
+        </div>
+
+        <button type="submit" class="btn btn-detalles">
+          <span>🔎 Buscar</span>
+        </button>
       </form>
-      <div id="resultados-busqueda"></div>
     </section>
 
-    <script type="module" src="./src/presenter.js"></script>
-  </body>
+    <!-- SECCIÓN: RESULTADOS DE BÚSQUEDA -->
+    <section>
+      <h2 class="section-title">📋 Resultados de Búsqueda</h2>
+      <div id="resultados-busqueda">
+        <!-- Los resultados de búsqueda se mostrarán aquí -->
+      </div>
+    </section>
+
+    <!-- SECCIÓN: MASCOTAS PUBLICADAS -->
+    <section>
+      <h2 class="section-title">❤️ Mascotas Disponibles para Adopción</h2>
+      <div id="resultado-div">
+        <!-- Las mascotas publicadas se mostrarán aquí -->
+      </div>
+    </section>
+
+    <!-- SECCIÓN: DETALLES DE MASCOTA -->
+    <section id="detalle-mascota">
+      <!-- Los detalles de la mascota seleccionada se mostrarán aquí -->
+    </section>
+
+  </div>
+
+  <!-- Contenedor de mensajes (se crea dinámicamente con JavaScript) -->
+  <div id="message-container" class="message-container"></div>
+
+  <!-- Script principal -->
+  <script type="module" src="./src/presenter.js"></script>
+</body>
 </html>
