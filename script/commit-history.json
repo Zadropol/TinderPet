@@ -266,17 +266,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6dc442f88b3f9fb89aa7a8b98f10302262aa8642",
     "author": "leitocam",
     "commit": {
       "date": "2025-11-25T03:40:58.000Z",
       "message": "refactor(presenter): delega lógica de búsqueda a busquedaPresenter",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/6dc442f88b3f9fb89aa7a8b98f10302262aa8642"
     },
     "stats": {
       "total": 67,
       "additions": 6,
       "deletions": 61,
+      "date": "2025-11-25"
+    },
+    "coverage": 70.69,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "leitocam",
+    "commit": {
+      "date": "2025-11-25T03:45:07.000Z",
+      "message": "refactor(presenter): extrae lógica de detalles y hash a detallePresenter",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
       "date": "2025-11-25"
     },
     "coverage": 70.69,
