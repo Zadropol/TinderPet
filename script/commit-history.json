@@ -171,17 +171,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e42c3bd8ccb1ab3827120f63c848feabd7afc9f1",
     "author": "leitocam",
     "commit": {
       "date": "2025-11-25T03:07:59.000Z",
       "message": "feat(ui): agrega estructura de vistas sin ocultar secciones",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/e42c3bd8ccb1ab3827120f63c848feabd7afc9f1"
     },
     "stats": {
       "total": 101,
       "additions": 66,
       "deletions": 35,
+      "date": "2025-11-25"
+    },
+    "coverage": 70.69,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "leitocam",
+    "commit": {
+      "date": "2025-11-25T03:14:37.000Z",
+      "message": "fix(routing): activa vista de perfiles al navegar a detalles por hash",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 5,
+      "deletions": 1,
       "date": "2025-11-25"
     },
     "coverage": 70.69,

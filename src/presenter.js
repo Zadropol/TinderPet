@@ -137,7 +137,11 @@ function mostrarDetalles(id) {
 
 function handleHash() {
   const m = location.hash.match(/^#\/mascota\/(.+)$/);
-  if (m) mostrarDetalles(m[1]);
+  if (m) {
+    // Asegura que la vista de perfiles esté activa cuando se navega a un detalle
+    activarVista('perfiles');
+    mostrarDetalles(m[1]);
+  }
 }
 
 // ----------------------------- VISTA -----------------------------
