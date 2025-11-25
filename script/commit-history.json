@@ -247,18 +247,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cbeedf52e48cd8d427703ed1e4beef58fef62a09",
     "author": "Alous12",
     "commit": {
       "date": "2025-11-16T23:55:26.000Z",
       "message": "correccion de import en el presenter",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/cbeedf52e48cd8d427703ed1e4beef58fef62a09"
     },
     "stats": {
       "total": 2,
       "additions": 1,
       "deletions": 1,
       "date": "2025-11-16"
+    },
+    "coverage": 87.76,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-11-25T01:52:25.000Z",
+      "message": "Elimina archivos vacios y quita comentario, ningun cambio significativo",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 0,
+      "deletions": 5,
+      "date": "2025-11-25"
     },
     "coverage": 87.76,
     "test_count": 12,
