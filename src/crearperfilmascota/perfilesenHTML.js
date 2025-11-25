@@ -1,4 +1,3 @@
-// Genera HTML de un perfil individual
 export function perfilAHTML(p) {
   if (!p) return "";
   return `
@@ -16,12 +15,10 @@ export function perfilAHTML(p) {
   </div>`;
 }
 
-// Genera HTML de múltiples perfiles
 export function generarHTMLPerfiles(perfiles = []) {
   return perfiles.map(perfilAHTML).join("");
 }
 
-// Alias para compatibilidad previa (un perfil)
 export function generarPerfilenHTML(perfil) {
   return perfilAHTML(perfil);
 }

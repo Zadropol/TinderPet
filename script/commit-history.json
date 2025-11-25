@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "77c93623a0244bafb1de062d26ef9266f8619a4e",
     "author": "Alous12",
     "commit": {
       "date": "2025-11-25T02:00:56.000Z",
       "message": "Merge con rama_luci",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/77c93623a0244bafb1de062d26ef9266f8619a4e"
     },
     "stats": {
       "total": 514,
@@ -261,6 +261,25 @@
       "date": "2025-11-25"
     },
     "coverage": 70.69,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-11-25T03:49:56.000Z",
+      "message": "fetch: cambia todo crearperfil para que funcione con base de datos y se adapta los test para que funcionen de manera externa a la base de datos",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 271,
+      "additions": 116,
+      "deletions": 155,
+      "date": "2025-11-25"
+    },
+    "coverage": 66.18,
     "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
