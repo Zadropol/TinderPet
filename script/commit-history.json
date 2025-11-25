@@ -209,17 +209,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9c50dd7a2689e389b64a62cb84190506cc31aec9",
     "author": "leitocam",
     "commit": {
       "date": "2025-11-25T03:23:39.000Z",
       "message": "refactor(presenter): extrae lógica de creación de perfiles a módulo dedicado",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/9c50dd7a2689e389b64a62cb84190506cc31aec9"
     },
     "stats": {
       "total": 71,
       "additions": 71,
       "deletions": 0,
+      "date": "2025-11-25"
+    },
+    "coverage": 70.69,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "leitocam",
+    "commit": {
+      "date": "2025-11-25T03:31:42.000Z",
+      "message": "refactor(presenter): extrae lógica de creación de perfiles a módulo dedicado",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 71,
+      "additions": 8,
+      "deletions": 63,
       "date": "2025-11-25"
     },
     "coverage": 70.69,
