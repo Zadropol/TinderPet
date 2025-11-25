@@ -323,16 +323,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0edc416a59e22caa9f98f764d2311f07b9903509",
     "author": "leitocam",
     "commit": {
       "date": "2025-11-25T04:05:42.000Z",
       "message": "test(e2e): adapta pruebas de búsqueda y detalles a vistas por pestañas",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/0edc416a59e22caa9f98f764d2311f07b9903509"
     },
     "stats": {
       "total": 6,
       "additions": 6,
+      "deletions": 0,
+      "date": "2025-11-25"
+    },
+    "coverage": 70.69,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "leitocam",
+    "commit": {
+      "date": "2025-11-25T04:12:39.000Z",
+      "message": "style(ui): mejora el aspecto visual del área de detalles de mascota",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 68,
+      "additions": 68,
       "deletions": 0,
       "date": "2025-11-25"
     },
