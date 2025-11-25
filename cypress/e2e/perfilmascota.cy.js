@@ -83,8 +83,8 @@ describe("Crear Perfil", () => {
      cy.get("#resultado-div").should("contain", "Firulais");
      cy.get("#resultado-div").should("contain", "Edad: 3 años");
       cy.get("#resultado-div").should("contain", "Raza: Pitbull");
-     cy.get("#resultado-div").find("img")
-       .should("have.attr", "src", imageUrl);
+     cy.get("#resultado-div .perfil").last().find("img")
+  .should("have.attr", "src", imageUrl);
      
      
    });

@@ -1,46 +1,20 @@
-import { crearperfil, cargarPerfilesGuardados } from "./crearperfilmascota/perfilmascota";
-import { EnviarSolicitudAdopcion } from "./adopcion"
+import { crearperfil, cargarPerfilesGuardados, leerPerfiles, usarRepositorioTest } from "./crearperfilmascota/perfilmascota";
+import { EnviarSolicitudAdopcion } from "./adopcion";
 import { renderDetalles, obtenerMascotaPorId } from "./mostrardetallesmascota/mostraDetalles.js";
 import { perfilAHTML } from "./crearperfilmascota/perfilesenHTML.js";
 
-// ----------------------------- REPOSITORIO -----------------------------
-const STORAGE_KEY = "perfilesMascotas";
-
-function leerRepositorio() {
-  const raw = localStorage.getItem(STORAGE_KEY);
-  try {
-    const list = raw ? JSON.parse(raw) : [];
-    return asegurarIds(list);
-  } catch {
-    return [];
-  }
-}
-
-function escribirRepositorio(lista) {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(lista));
-  } catch {}
-}
-
-function asegurarIds(lista) {
-  let cambiado = false;
-  lista.forEach(p => {
-    if (!p.id) {
-      p.id = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
-      cambiado = true;
-    }
-  });
-  if (cambiado) escribirRepositorio(lista);
-  return lista;
+// Detectar si estamos en Cypress y activar modo test
+if (window.Cypress) {
+  usarRepositorioTest(true);
 }
 
 // ----------------------------- CREACIÓN PERFIL -----------------------------
-function renderPublicados() {
+async function renderPublicados() {
   const salida = document.querySelector("#resultado-div");
   if (!salida) return;
-  const repo = leerRepositorio();
-  salida.innerHTML = repo.length
-    ? repo.map(perfilAHTML).join("")
+  const perfiles = await leerPerfiles();
+  salida.innerHTML = perfiles.length
+    ? perfiles.map(perfilAHTML).join("")
     : "No hay perfiles publicados.";
 }
 
@@ -49,9 +23,9 @@ function initCreacion() {
   if (!form) return;
   renderPublicados();
 
-  form.addEventListener("submit", e => {
+  form.addEventListener("submit", async e => {
     e.preventDefault();
-    crearperfil(
+    await crearperfil(
       form.querySelector("#nombre-mascota")?.value,
       form.querySelector("#edad-mascota")?.value,
       form.querySelector("#raza-mascota")?.value,
@@ -61,7 +35,7 @@ function initCreacion() {
       form.querySelector("#vacunas-mascota")?.value
     );
     form.reset();
-    renderPublicados();
+    await renderPublicados();
   });
 }
 
@@ -98,10 +72,10 @@ function renderResultados(resultados) {
 function initBusqueda() {
   const form = document.querySelector("#buscar-form");
   if (!form) return;
-  form.addEventListener("submit", e => {
+  form.addEventListener("submit", async e => {
     e.preventDefault();
-    const repo = leerRepositorio();
-    const resultados = buscar(repo, {
+    const perfiles = await leerPerfiles();
+    const resultados = buscar(perfiles, {
       edad: form.querySelector("#buscar-edad")?.value,
       raza: form.querySelector("#buscar-raza")?.value,
       especie: form.querySelector("#buscar-especie")?.value
@@ -127,9 +101,9 @@ function initBusqueda() {
 }
 
 // ----------------------------- DETALLES -----------------------------
-function mostrarDetalles(id) {
-  const repo = leerRepositorio();
-  const mascota = obtenerMascotaPorId(id, repo);
+async function mostrarDetalles(id) {
+  const perfiles = await leerPerfiles();
+  const mascota = obtenerMascotaPorId(id, perfiles);
   const html = renderDetalles(mascota);
   const destino = document.querySelector("#detalle-mascota");
   if (destino) destino.innerHTML = html;
