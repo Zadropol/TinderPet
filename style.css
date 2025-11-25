@@ -51,7 +51,7 @@ body {
   text-align: center;
   box-shadow: var(--shadow-lg);
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .header h1 {
@@ -64,6 +64,65 @@ body {
 .header p {
   font-size: 1.2em;
   opacity: 0.95;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin: 0 auto 30px;
+  max-width: 1200px;
+}
+
+.nav-btn {
+  padding: 12px 24px;
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.nav-btn.active {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* ========== SISTEMA DE VISTAS ========== */
+[data-view-section] {
+  display: none;
+}
+
+[data-view-section].vista-activa {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ========== CONTENEDOR DE MENSAJES ========== */

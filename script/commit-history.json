@@ -76,17 +76,36 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "bfc35d9c65df657d12a3d2c56552bc083748d966",
     "author": "leitocam",
     "commit": {
       "date": "2025-11-25T05:02:41.000Z",
       "message": "Merge remote-tracking branch 'origin/main' into main",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/bfc35d9c65df657d12a3d2c56552bc083748d966"
     },
     "stats": {
       "total": 1747,
       "additions": 1382,
       "deletions": 365,
+      "date": "2025-11-25"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "leitocam",
+    "commit": {
+      "date": "2025-11-25T05:13:17.000Z",
+      "message": "fix(ui): restaura sistema de vistas con navbar para pasar tests de Cypress",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 96,
+      "additions": 81,
+      "deletions": 15,
       "date": "2025-11-25"
     },
     "coverage": 0,

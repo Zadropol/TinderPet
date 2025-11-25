@@ -13,11 +13,18 @@
     <p>Conectando corazones con patitas en Bolivia</p>
   </header>
 
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <button class="nav-btn" data-view="crear">📝 Crear Perfil</button>
+    <button class="nav-btn" data-view="buscar">🔍 Buscar</button>
+    <button class="nav-btn" data-view="perfiles">❤️ Ver Perfiles</button>
+  </nav>
+
   <!-- CONTENEDOR PRINCIPAL -->
   <div class="container">
     
     <!-- SECCIÓN: CREAR PERFIL -->
-    <section class="form-container">
+    <section class="form-container vista-activa" data-view-section="crear">
       <h2>📝 Registra una Mascota</h2>
       <form id="perfil-form">
         <div class="form-group">
@@ -73,7 +80,7 @@
     </section>
 
     <!-- SECCIÓN: BUSCAR MASCOTAS -->
-    <section class="form-container">
+    <section class="form-container" data-view-section="buscar">
       <h2>🔍 Buscar Mascotas</h2>
       <form id="buscar-form">
         <div class="form-group">
@@ -102,27 +109,27 @@
           <span>🔎 Buscar</span>
         </button>
       </form>
-    </section>
 
-    <!-- SECCIÓN: RESULTADOS DE BÚSQUEDA -->
-    <section>
-      <h2 class="section-title">📋 Resultados de Búsqueda</h2>
-      <div id="resultados-busqueda">
-        <!-- Los resultados de búsqueda se mostrarán aquí -->
+      <!-- RESULTADOS DE BÚSQUEDA (dentro de la vista de búsqueda) -->
+      <div style="margin-top: 30px;">
+        <h2 class="section-title">📋 Resultados de Búsqueda</h2>
+        <div id="resultados-busqueda">
+          <!-- Los resultados de búsqueda se mostrarán aquí -->
+        </div>
       </div>
     </section>
 
     <!-- SECCIÓN: MASCOTAS PUBLICADAS -->
-    <section>
+    <section data-view-section="perfiles">
       <h2 class="section-title">❤️ Mascotas Disponibles para Adopción</h2>
       <div id="resultado-div">
         <!-- Las mascotas publicadas se mostrarán aquí -->
       </div>
-    </section>
-
-    <!-- SECCIÓN: DETALLES DE MASCOTA -->
-    <section id="detalle-mascota">
-      <!-- Los detalles de la mascota seleccionada se mostrarán aquí -->
+      
+      <!-- DETALLES DE MASCOTA (dentro de la vista de perfiles) -->
+      <div id="detalle-mascota" style="margin-top: 30px;">
+        <!-- Los detalles de la mascota seleccionada se mostrarán aquí -->
+      </div>
     </section>
 
   </div>
