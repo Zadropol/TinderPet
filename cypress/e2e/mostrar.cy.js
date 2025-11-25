@@ -18,6 +18,9 @@ describe("Ver detalles de mascota - ATDD", () => {
     cy.get("#vacunas-mascota").type("Antirrábica, Parvovirus");
     cy.get("#crear-button").click();
 
+    // Activar la vista de búsqueda antes de usar sus campos
+    cy.get('[data-view="buscar"]').click();
+
     // Buscar por raza para listar resultados y obtener el botón Ver detalles
     cy.get("#buscar-raza").type("Pitbull");
     cy.get("#buscar-form button[type=submit]").click();

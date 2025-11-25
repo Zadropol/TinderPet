@@ -49,6 +49,9 @@ it("debería buscar mascotas por especie y mostrar la tarjeta completa", () => {
   // Espera que aparezca en resultado-div
   cy.get("#resultado-div").should("contain", "Firulais");
 
+  // Activar la vista de búsqueda antes de interactuar con sus campos
+  cy.get('[data-view="buscar"]').click();
+
   cy.get("#buscar-especie").type("Perro");
   cy.get("#buscar-form").submit();
 

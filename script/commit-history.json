@@ -304,17 +304,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "80fa91304a4d0b86de4fdb21ad8c3ad6f8ecf26d",
     "author": "leitocam",
     "commit": {
       "date": "2025-11-25T04:01:47.000Z",
       "message": "refactor(ui): limpia presenter y mejora estilos de navbar y botones",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/80fa91304a4d0b86de4fdb21ad8c3ad6f8ecf26d"
     },
     "stats": {
       "total": 167,
       "additions": 115,
       "deletions": 52,
+      "date": "2025-11-25"
+    },
+    "coverage": 70.69,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "leitocam",
+    "commit": {
+      "date": "2025-11-25T04:05:42.000Z",
+      "message": "test(e2e): adapta pruebas de búsqueda y detalles a vistas por pestañas",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
       "date": "2025-11-25"
     },
     "coverage": 70.69,
