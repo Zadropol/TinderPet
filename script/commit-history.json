@@ -1,133 +1,19 @@
 [
   {
-    "sha": "6ef4c2702b370b66dfe35c3a2fb4504115c001cc",
-    "author": "Zadropol",
-    "commit": {
-      "date": "2025-11-24T01:10:39.000Z",
-      "message": "fix:resolviendo conflictos",
-      "url": "https://github.com/Zadropol/TinderPet/commit/6ef4c2702b370b66dfe35c3a2fb4504115c001cc"
-    },
-    "stats": {
-      "total": 901,
-      "additions": 758,
-      "deletions": 143,
-      "date": "2025-11-24"
-    },
-    "coverage": 70.69,
-    "test_count": 12,
-    "failed_tests": 0,
-    "conclusion": "success"
-  },
-  {
-    "sha": "0fa6bd956a69c563066d825e022b57d1ea51be69",
-    "author": "Zadropol",
-    "commit": {
-      "date": "2025-11-25T01:19:19.000Z",
-      "message": "fix: correccion de otros conflictos",
-      "url": "https://github.com/Zadropol/TinderPet/commit/0fa6bd956a69c563066d825e022b57d1ea51be69"
-    },
-    "stats": {
-      "total": 129,
-      "additions": 56,
-      "deletions": 73,
-      "date": "2025-11-25"
-    },
-    "coverage": 0,
-    "test_count": 0,
-    "failed_tests": 0,
-    "conclusion": "neutral"
-  },
-  {
-    "sha": "d7b6f68ecda44aead7c45336e81000b8e25540f1",
-    "author": "Zadropol",
-    "commit": {
-      "date": "2025-11-25T04:40:26.000Z",
-      "message": "style: cambios en el css",
-      "url": "https://github.com/Zadropol/TinderPet/commit/d7b6f68ecda44aead7c45336e81000b8e25540f1"
-    },
-    "stats": {
-      "total": 377,
-      "additions": 274,
-      "deletions": 103,
-      "date": "2025-11-25"
-    },
-    "coverage": 0,
-    "test_count": 0,
-    "failed_tests": 0,
-    "conclusion": "neutral"
-  },
-  {
-    "sha": "81961fe5b39b75f81d2afa3c7b2e1cfb996f3311",
-    "author": "Zadropol",
-    "commit": {
-      "date": "2025-11-25T04:51:11.000Z",
-      "message": "style: cambios en el html y css",
-      "url": "https://github.com/Zadropol/TinderPet/commit/81961fe5b39b75f81d2afa3c7b2e1cfb996f3311"
-    },
-    "stats": {
-      "total": 740,
-      "additions": 579,
-      "deletions": 161,
-      "date": "2025-11-25"
-    },
-    "coverage": 0,
-    "test_count": 0,
-    "failed_tests": 0,
-    "conclusion": "neutral"
-  },
-  {
-    "sha": "bfc35d9c65df657d12a3d2c56552bc083748d966",
-    "author": "leitocam",
-    "commit": {
-      "date": "2025-11-25T05:02:41.000Z",
-      "message": "Merge remote-tracking branch 'origin/main' into main",
-      "url": "https://github.com/Zadropol/TinderPet/commit/bfc35d9c65df657d12a3d2c56552bc083748d966"
-    },
-    "stats": {
-      "total": 1747,
-      "additions": 1382,
-      "deletions": 365,
-      "date": "2025-11-25"
-    },
-    "coverage": 0,
-    "test_count": 0,
-    "failed_tests": 0,
-    "conclusion": "neutral"
-  },
-  {
-    "sha": "f01fd4b4c72032b1f17bcb15be250e54809b96a5",
-    "author": "leitocam",
-    "commit": {
-      "date": "2025-11-25T05:13:17.000Z",
-      "message": "fix(ui): restaura sistema de vistas con navbar para pasar tests de Cypress",
-      "url": "https://github.com/Zadropol/TinderPet/commit/f01fd4b4c72032b1f17bcb15be250e54809b96a5"
-    },
-    "stats": {
-      "total": 96,
-      "additions": 81,
-      "deletions": 15,
-      "date": "2025-11-25"
-    },
-    "coverage": 0,
-    "test_count": 0,
-    "failed_tests": 0,
-    "conclusion": "neutral"
-  },
-  {
     "sha": "HEAD",
-    "author": "leitocam",
+    "author": "lucianaaaaaaa",
     "commit": {
-      "date": "2025-11-25T05:39:06.000Z",
-      "message": "fix: test arreglados , error merged solucionado",
+      "date": "2025-11-25T13:27:19.000Z",
+      "message": "Merge branch 'Rama_Ale' of https://github.com/Zadropol/TinderPet into rama_luci",
       "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
     },
     "stats": {
-      "total": 92,
-      "additions": 68,
-      "deletions": 24,
+      "total": 301,
+      "additions": 141,
+      "deletions": 160,
       "date": "2025-11-25"
     },
-    "coverage": 70.69,
+    "coverage": 66.18,
     "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
