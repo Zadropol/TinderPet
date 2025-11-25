@@ -152,18 +152,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "88b27e7719b7f9bc301808bdd036a262c21080d5",
     "author": "lucianaaaaaaa",
     "commit": {
       "date": "2025-11-21T23:40:08.000Z",
       "message": "feat(adopcion): agrega botones de solicitud y mensajes por perfil para pruebas Cypress",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/88b27e7719b7f9bc301808bdd036a262c21080d5"
     },
     "stats": {
       "total": 44,
       "additions": 34,
       "deletions": 10,
       "date": "2025-11-21"
+    },
+    "coverage": 70.69,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "leitocam",
+    "commit": {
+      "date": "2025-11-25T03:07:59.000Z",
+      "message": "feat(ui): agrega estructura de vistas sin ocultar secciones",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 101,
+      "additions": 66,
+      "deletions": 35,
+      "date": "2025-11-25"
     },
     "coverage": 70.69,
     "test_count": 12,

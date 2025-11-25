@@ -140,6 +140,18 @@ function handleHash() {
   if (m) mostrarDetalles(m[1]);
 }
 
+// ----------------------------- VISTA -----------------------------
+function activarVista(nombreVista) {
+  const secciones = document.querySelectorAll('[data-view-section]');
+  secciones.forEach((sec) => {
+    if (sec.dataset.viewSection === nombreVista) {
+      sec.classList.add('vista-activa');
+    } else {
+      sec.classList.remove('vista-activa');
+    }
+  });
+}
+
 // ----------------------------- INIT -----------------------------
 document.addEventListener("DOMContentLoaded", () => {
   initCreacion();
@@ -177,6 +189,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // Activar vista por defecto
+  activarVista('perfiles');
+
+  // Manejar clicks en navbar para cambiar vista
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-view]');
+    if (!btn) return;
+    const vista = btn.getAttribute('data-view');
+    if (vista) {
+      activarVista(vista);
+    }
+  });
 
   window.addEventListener("hashchange", handleHash);
 });
