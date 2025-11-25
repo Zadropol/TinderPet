@@ -118,6 +118,7 @@ function initBusqueda() {
         const id = btn.getAttribute("data-id");
         if (id) {
           location.hash = `#/mascota/${id}`;
+          activarVista('perfiles');
           mostrarDetalles(id);
         }
       }
@@ -136,7 +137,10 @@ function mostrarDetalles(id) {
 
 function handleHash() {
   const m = location.hash.match(/^#\/mascota\/(.+)$/);
-  if (m) mostrarDetalles(m[1]);
+  if (m) {
+    activarVista('perfiles');
+    mostrarDetalles(m[1]);
+  }
 }
 
 // ----------------------------- MANEJADOR DE SOLICITUD (REUTILIZABLE) -----------------------------
@@ -148,7 +152,6 @@ function manejarSolicitud(e) {
       msg.textContent = EnviarSolicitudAdopcion();
       msg.style.display = "block";
       
-      // Opcional: ocultar el mensaje después de 5 segundos
       setTimeout(() => {
         msg.textContent = "";
         msg.style.display = "none";
@@ -163,6 +166,28 @@ function manejarDetalles(e) {
     const id = btnDetalles.getAttribute("data-id");
     if (id) mostrarDetalles(id);
   }
+}
+
+// ----------------------------- VISTA -----------------------------
+function activarVista(nombreVista) {
+  const secciones = document.querySelectorAll('[data-view-section]');
+  secciones.forEach((sec) => {
+    if (sec.dataset.viewSection === nombreVista) {
+      sec.classList.add('vista-activa');
+    } else {
+      sec.classList.remove('vista-activa');
+    }
+  });
+  
+  // Actualizar botones activos
+  const botones = document.querySelectorAll('[data-view]');
+  botones.forEach((btn) => {
+    if (btn.dataset.view === nombreVista) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
 }
 
 // ----------------------------- INIT -----------------------------
@@ -189,13 +214,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ⭐ NUEVO: Event listener para el contenedor de detalles
+  // Event listener para el contenedor de detalles
   const detalles = document.querySelector("#detalle-mascota");
   if (detalles) {
     detalles.addEventListener("click", e => {
       manejarSolicitud(e);
     });
   }
+
+  // Activar vista por defecto
+  activarVista('crear');
+
+  // Manejar clicks en navbar para cambiar vista
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-view]');
+    if (!btn) return;
+    const vista = btn.getAttribute('data-view');
+    if (vista) {
+      activarVista(vista);
+    }
+  });
 
   window.addEventListener("hashchange", handleHash);
 });

@@ -95,12 +95,12 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "f01fd4b4c72032b1f17bcb15be250e54809b96a5",
     "author": "leitocam",
     "commit": {
       "date": "2025-11-25T05:13:17.000Z",
       "message": "fix(ui): restaura sistema de vistas con navbar para pasar tests de Cypress",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/f01fd4b4c72032b1f17bcb15be250e54809b96a5"
     },
     "stats": {
       "total": 96,
@@ -112,5 +112,24 @@
     "test_count": 0,
     "failed_tests": 0,
     "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "leitocam",
+    "commit": {
+      "date": "2025-11-25T05:39:06.000Z",
+      "message": "fix: test arreglados , error merged solucionado",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 92,
+      "additions": 68,
+      "deletions": 24,
+      "date": "2025-11-25"
+    },
+    "coverage": 70.69,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

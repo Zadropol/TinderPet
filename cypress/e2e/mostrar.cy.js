@@ -13,8 +13,8 @@ describe("Ver detalles de mascota - ATDD", () => {
     cy.get("#edad-mascota").type("3");
     cy.get("#raza-mascota").type("Pitbull");
     cy.get("#imagen-mascota").type("https://example.com/firu.jpg");
-    cy.get("#especie-mascota").type("Perro");
-    cy.get("#sexo-mascota").type("Macho");
+    cy.get("#especie-mascota").select("Perro");
+    cy.get("#sexo-mascota").select("Macho");
     cy.get("#vacunas-mascota").type("Antirrábica, Parvovirus");
     cy.get("#crear-button").click();
 
