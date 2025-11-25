@@ -153,3 +153,77 @@ form input[type="submit"]:hover {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
+
+/* Botones generales */
+button,
+form input[type="submit"],
+.btn-solicitud {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+nav button[data-view] {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #ffffff;
+  color: #333;
+  font-size: 0.95rem;
+  transition: background 0.3s, color 0.3s, box-shadow 0.2s, transform 0.1s;
+}
+
+nav button[data-view]:hover {
+  background: #6a5acd;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Botones principales de formularios */
+#perfil-form button[type="submit"],
+#perfil-form input[type="submit"],
+#buscar-form button[type="submit"] {
+  background: linear-gradient(135deg, #ff7a00, #ff3c3c);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 24px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s, transform 0.1s, box-shadow 0.1s;
+}
+
+#perfil-form button[type="submit"]:hover,
+#perfil-form input[type="submit"]:hover,
+#buscar-form button[type="submit"]:hover {
+  background: linear-gradient(135deg, #ff3c3c, #ff7a00);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón "Ver detalles" dentro de tarjetas */
+.tarjeta-mascota .ver-detalles {
+  margin-top: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #6a5acd;
+  background: #fff;
+  color: #6a5acd;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.tarjeta-mascota .ver-detalles:hover {
+  background: #6a5acd;
+  color: #fff;
+  transform: translateY(-1px);
+}

@@ -285,17 +285,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "acd38b1841da2c86fd72d40b09a8d71e37d146d0",
     "author": "leitocam",
     "commit": {
       "date": "2025-11-25T03:45:07.000Z",
       "message": "refactor(presenter): extrae lógica de detalles y hash a detallePresenter",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/acd38b1841da2c86fd72d40b09a8d71e37d146d0"
     },
     "stats": {
       "total": 22,
       "additions": 22,
       "deletions": 0,
+      "date": "2025-11-25"
+    },
+    "coverage": 70.69,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "leitocam",
+    "commit": {
+      "date": "2025-11-25T04:01:47.000Z",
+      "message": "refactor(ui): limpia presenter y mejora estilos de navbar y botones",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 167,
+      "additions": 115,
+      "deletions": 52,
       "date": "2025-11-25"
     },
     "coverage": 70.69,

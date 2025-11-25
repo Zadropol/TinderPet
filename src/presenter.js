@@ -15,24 +15,7 @@ import {
   renderResultados,
   initBusqueda as initBusquedaDesdePresenter,
 } from "./presenter/busquedaPresenter.js";
-
-// ----------------------------- DETALLES -----------------------------
-function mostrarDetalles(id) {
-  const repo = leerRepositorio();
-  const mascota = obtenerMascotaPorId(id, repo);
-  const html = renderDetalles(mascota);
-  const destino = document.querySelector("#detalle-mascota");
-  if (destino) destino.innerHTML = html;
-}
-
-function handleHash() {
-  const m = location.hash.match(/^#\/mascota\/(.+)$/);
-  if (m) {
-    // Asegura que la vista de perfiles esté activa cuando se navega a un detalle
-    activarVista('perfiles');
-    mostrarDetalles(m[1]);
-  }
-}
+import { mostrarDetalles, handleHash as handleHashDesdePresenter } from "./presenter/detallePresenter.js";
 
 // ----------------------------- VISTA -----------------------------
 function activarVista(nombreVista) {
@@ -46,45 +29,51 @@ function activarVista(nombreVista) {
   });
 }
 
+// ----------------------------- EVENTOS LISTAS -----------------------------
+function wireEventosPublicados() {
+  const publicados = document.querySelector("#resultado-div");
+  if (!publicados) return;
+  publicados.addEventListener("click", (e) => {
+    const btnDetalles = e.target.closest(".ver-detalles");
+    if (btnDetalles) {
+      const id = btnDetalles.getAttribute("data-id");
+      mostrarDetalles(id);
+    }
+    const btnSolicitud = e.target.closest(".btn-solicitud");
+    if (btnSolicitud) {
+      const msg = btnSolicitud.nextElementSibling;
+      if (msg) msg.textContent = EnviarSolicitudAdopcion();
+    }
+  });
+}
+
+function wireEventosResultadosBusqueda() {
+  const resultados = document.querySelector("#resultados-busqueda");
+  if (!resultados) return;
+  resultados.addEventListener("click", (e) => {
+    const btnDetalles = e.target.closest(".ver-detalles");
+    if (btnDetalles) {
+      const id = btnDetalles.getAttribute("data-id");
+      mostrarDetalles(id);
+    }
+    const btnSolicitud = e.target.closest(".btn-solicitud");
+    if (btnSolicitud) {
+      const msg = btnSolicitud.nextElementSibling;
+      if (msg) msg.textContent = EnviarSolicitudAdopcion();
+    }
+  });
+}
+
 // ----------------------------- INIT -----------------------------
 document.addEventListener("DOMContentLoaded", () => {
   initCreacion();
   initBusquedaDesdePresenter(mostrarDetalles);
-  handleHash();
+  handleHashDesdePresenter(activarVista);
 
-  const publicados = document.querySelector("#resultado-div");
-  if (publicados) {
-    publicados.addEventListener("click", e => {
-      const btnDetalles = e.target.closest(".ver-detalles");
-      if (btnDetalles) {
-        const id = btnDetalles.getAttribute("data-id");
-        mostrarDetalles(id);
-      }
-      const btnSolicitud = e.target.closest(".btn-solicitud");
-      if (btnSolicitud) {
-        const msg = btnSolicitud.nextElementSibling;
-        if (msg) msg.textContent = EnviarSolicitudAdopcion();
-      }
-    });
-  }
+  wireEventosPublicados();
+  wireEventosResultadosBusqueda();
 
-  const resultados = document.querySelector("#resultados-busqueda");
-  if (resultados) {
-    resultados.addEventListener("click", e => {
-      const btnDetalles = e.target.closest(".ver-detalles");
-      if (btnDetalles) {
-        const id = btnDetalles.getAttribute("data-id");
-        mostrarDetalles(id);
-      }
-      const btnSolicitud = e.target.closest(".btn-solicitud");
-      if (btnSolicitud) {
-        const msg = btnSolicitud.nextElementSibling;
-        if (msg) msg.textContent = EnviarSolicitudAdopcion();
-      }
-    });
-  }
-
-  // Activar vista por defecto
+  // Activar vista por defecto (aunque aún no ocultamos secciones por CSS)
   activarVista('perfiles');
 
   // Manejar clicks en navbar para cambiar vista
@@ -97,5 +86,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  window.addEventListener("hashchange", handleHash);
+  window.addEventListener("hashchange", () => handleHashDesdePresenter(activarVista));
 });
