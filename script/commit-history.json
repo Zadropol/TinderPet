@@ -267,16 +267,54 @@
   },
   {
     "sha": "HEAD",
+    "author": "Zadropol",
+    "commit": {
+      "date": "2025-11-22T16:37:15.000Z",
+      "message": "feat: conexion a Bd en Neon",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 548,
+      "additions": 518,
+      "deletions": 30,
+      "date": "2025-11-22"
+    },
+    "coverage": 75,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "835faecd8e55a7f7b22833b01d18180d6c7b50f5",
     "author": "Alous12",
     "commit": {
       "date": "2025-11-25T01:52:25.000Z",
       "message": "Elimina archivos vacios y quita comentario, ningun cambio significativo",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/835faecd8e55a7f7b22833b01d18180d6c7b50f5"
     },
     "stats": {
       "total": 5,
       "additions": 0,
       "deletions": 5,
+      "date": "2025-11-25"
+    },
+    "coverage": 87.76,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alous12",
+    "commit": {
+      "date": "2025-11-25T01:54:11.000Z",
+      "message": "Merge con Rama_Adrian",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 548,
+      "additions": 518,
+      "deletions": 30,
       "date": "2025-11-25"
     },
     "coverage": 87.76,
