@@ -19,17 +19,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0fa6bd956a69c563066d825e022b57d1ea51be69",
     "author": "Zadropol",
     "commit": {
       "date": "2025-11-25T01:19:19.000Z",
       "message": "fix: correccion de otros conflictos",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/0fa6bd956a69c563066d825e022b57d1ea51be69"
     },
     "stats": {
       "total": 129,
       "additions": 56,
       "deletions": 73,
+      "date": "2025-11-25"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Zadropol",
+    "commit": {
+      "date": "2025-11-25T04:40:26.000Z",
+      "message": "style: cambios en el css",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 377,
+      "additions": 274,
+      "deletions": 103,
       "date": "2025-11-25"
     },
     "coverage": 0,
