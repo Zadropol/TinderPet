@@ -532,17 +532,36 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "bba287c8697bb8683acfa015de6dceeec7e479c1",
     "author": "Zadropol",
     "commit": {
       "date": "2025-11-26T21:09:49.000Z",
       "message": "prueba",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/bba287c8697bb8683acfa015de6dceeec7e479c1"
     },
     "stats": {
       "total": 2,
       "additions": 1,
       "deletions": 1,
+      "date": "2025-11-26"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Zadropol",
+    "commit": {
+      "date": "2025-11-26T21:15:08.000Z",
+      "message": "fix: netlify",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
       "date": "2025-11-26"
     },
     "coverage": 0,
