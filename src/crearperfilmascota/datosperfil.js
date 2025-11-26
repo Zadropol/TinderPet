@@ -1,10 +1,37 @@
-const API_URL = "http://localhost:1234/perfiles";
+// const API_URL = "http://localhost:3000/perfiles"; // ¡Eliminado!
 
-const _testRepo = [];
-let _isTest = false;
+const STORAGE_KEY = "perfilesMascotas"; // Clave de localStorage
 
-function usarRepositorioTest(valor = true) {
-  _isTest = valor;
+function _leerRepositorio() {
+  const raw = localStorage.getItem(STORAGE_KEY);
+  try {
+    const list = raw ? JSON.parse(raw) : [];
+    return _asegurarIds(list);
+  } catch (error) {
+    console.error("Error al leer de localStorage:", error);
+    return [];
+  }
+}
+
+function _escribirRepositorio(lista) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(lista));
+  } catch (error) {
+    console.error("Error al escribir en localStorage:", error);
+  }
+}
+
+function _asegurarIds(lista) {
+  let cambiado = false;
+  lista.forEach((p) => {
+    // Generar un ID único simple si no existe
+    if (!p.id) {
+      p.id = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+      cambiado = true;
+    }
+  });
+  if (cambiado) _escribirRepositorio(lista);
+  return lista;
 }
 
 function crearObjetoPerfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
@@ -16,41 +43,28 @@ function crearObjetoPerfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
     especie,
     sexo,
     vacunas,
+    // El id se asignará al guardar
   };
 }
 
-async function obtenerPerfiles() {
-    if (_isTest) 
-    {
-        return _testRepo;
-    } 
-    else 
-    {
-        const res = await fetch(API_URL);
-        if (!res.ok) throw new Error("Error al obtener perfiles desde la DB");
-        const data = await res.json();
-        return data;
-    } 
+// Ahora es síncrona
+function obtenerPerfiles() {
+  return _leerRepositorio();
 }
 
-async function guardarPerfiles(perfil) {
-    if (_isTest)
-    {
-        _testRepo.push(perfil);
-        perfil.id = _testRepo.length; 
-        return perfil;
-    }
-
-
-  const res = await fetch(API_URL, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(perfil),
-  });
-  if (!res.ok) throw new Error("Error al guardar perfil en la DB");
-  const data = await res.json();
-  perfil.id = data.perfil.id;
+// Ahora es síncrona
+function guardarPerfiles(perfil) {
+  const perfiles = _leerRepositorio();
+  
+  // Asignar ID si no tiene (aunque _asegurarIds ya lo hace, lo hacemos aquí por si acaso)
+  if (!perfil.id) {
+    perfil.id = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+  }
+  
+  perfiles.push(perfil);
+  _escribirRepositorio(perfiles);
   return perfil;
 }
 
-export { crearObjetoPerfil, obtenerPerfiles, guardarPerfiles, usarRepositorioTest };
+// Se elimina usarRepositorioTest
+export { crearObjetoPerfil, obtenerPerfiles, guardarPerfiles };

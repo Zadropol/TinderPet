@@ -456,17 +456,36 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "9b335ecf404247870b915dbf93d2fbe79b16f0d6",
     "author": "Zadropol",
     "commit": {
       "date": "2025-11-26T16:37:06.000Z",
       "message": "feat: creacion de server.js, y agregado de funciones",
-      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+      "url": "https://github.com/Zadropol/TinderPet/commit/9b335ecf404247870b915dbf93d2fbe79b16f0d6"
     },
     "stats": {
       "total": 132,
       "additions": 109,
       "deletions": 23,
+      "date": "2025-11-26"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Zadropol",
+    "commit": {
+      "date": "2025-11-26T19:11:07.000Z",
+      "message": "localstorage",
+      "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
+    },
+    "stats": {
+      "total": 326,
+      "additions": 155,
+      "deletions": 171,
       "date": "2025-11-26"
     },
     "coverage": 0,

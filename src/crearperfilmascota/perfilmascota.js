@@ -1,20 +1,20 @@
-import { crearObjetoPerfil, obtenerPerfiles, guardarPerfiles, usarRepositorioTest } from "./datosperfil.js";
+import { crearObjetoPerfil, obtenerPerfiles, guardarPerfiles,} from "./datosperfil.js";
 import { perfilAHTML } from "./perfilesenHTML.js";
 
-async function crearperfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
+function crearperfil(nombre, edad, raza, imagen, especie, sexo, vacunas) {
   const perfil = crearObjetoPerfil(nombre, edad, raza, imagen, especie, sexo, vacunas);
-  await guardarPerfiles(perfil);
+  guardarPerfiles(perfil);
 
   return perfil;
 }
 
-async function leerPerfiles() {
-  return await obtenerPerfiles();
+function leerPerfiles() {
+  return obtenerPerfiles();
 }
 
-async function cargarPerfilesGuardados() {
-  const perfiles = await obtenerPerfiles();
+function cargarPerfilesGuardados() {
+  const perfiles = obtenerPerfiles();
   return perfiles.map(perfilAHTML).join("");
 }
 
-export { crearperfil, cargarPerfilesGuardados, leerPerfiles, usarRepositorioTest };
+export { crearperfil, cargarPerfilesGuardados, leerPerfiles};

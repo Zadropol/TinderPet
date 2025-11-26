@@ -1,21 +1,20 @@
 import { leerPerfiles } from "../crearperfilmascota/perfilmascota";
 import { renderResultados } from "./busquedaPresenter.js";
-import { buscarPerfilesAPI } from "../crearperfilmascota/datosperfil.js";
 
 
-// function buscar(perfiles, { edad, raza, especie }) {
-//   const edadVal = edad?.trim();
-//   const razaVal = raza?.trim().toLowerCase();
-//   const especieVal = especie?.trim().toLowerCase();
-//   return perfiles.filter((p) => {
-//     const edadOk = edadVal ? String(p.edad) === String(edadVal) : false;
-//     const razaOk = razaVal ? (p.raza || "").trim().toLowerCase() === razaVal : false;
-//     const especieOk = especieVal
-//       ? (p.especie || "").trim().toLowerCase() === especieVal
-//       : false;
-//     return edadOk || razaOk || especieOk;
-//   });
-// }
+function buscar(perfiles, { edad, raza, especie }) {
+  const edadVal = edad?.trim();
+  const razaVal = raza?.trim().toLowerCase();
+  const especieVal = especie?.trim().toLowerCase();
+  return perfiles.filter((p) => {
+    const edadOk = edadVal ? String(p.edad) === String(edadVal) : false;
+    const razaOk = razaVal ? (p.raza || "").trim().toLowerCase() === razaVal : false;
+    const especieOk = especieVal
+      ? (p.especie || "").trim().toLowerCase() === especieVal
+      : false;
+    return edadOk || razaOk || especieOk;
+  });
+}
 
 function renderResultados(resultados) {
   const cont = document.querySelector("#resultados-busqueda");
@@ -42,15 +41,14 @@ function initBusqueda(mostrarDetalles) {
   const form = document.querySelector("#buscar-form");
   if (!form) return;
 
-  form.addEventListener("submit", async (e) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const repo = await leerPerfiles();
-    const filtros = buscar(repo, {
+    const repo = leerPerfiles();
+    const resultados = buscar(repo, {
       edad: form.querySelector("#buscar-edad")?.value,
       raza: form.querySelector("#buscar-raza")?.value,
       especie: form.querySelector("#buscar-especie")?.value,
     });
-    const resultados = await buscarPerfilesAPI(filtros);
     renderResultados(resultados);
   });
 
@@ -71,4 +69,4 @@ function initBusqueda(mostrarDetalles) {
   }
 }
 
-export { renderResultados, initBusqueda };
+export { buscar, renderResultados, initBusqueda };
