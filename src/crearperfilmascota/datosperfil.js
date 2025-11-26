@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/perfiles";
+const API_URL = "http://localhost:1234/perfiles";
 
 const _testRepo = [];
 let _isTest = false;
