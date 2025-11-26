@@ -43,7 +43,7 @@
     "parcel-jest-base": "file:",
     "pg": "^8.16.3"
   },
-  "main": "cypress.config.js",
+  "main": "index.html",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Zadropol/TinderPet.git"
