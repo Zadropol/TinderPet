@@ -1,5 +1,4 @@
 import { leerPerfiles } from "../crearperfilmascota/perfilmascota";
-import { renderResultados } from "./busquedaPresenter.js";
 
 
 function buscar(perfiles, { edad, raza, especie }) {
@@ -8,7 +7,7 @@ function buscar(perfiles, { edad, raza, especie }) {
   const especieVal = especie?.trim().toLowerCase();
   return perfiles.filter((p) => {
     const edadOk = edadVal ? String(p.edad) === String(edadVal) : false;
-    const razaOk = razaVal ? (p.raza || "").trim().toLowerCase() === razaVal : false;
+    const razaOk = razaVal ? (p.raza || "").trim().toLowerCase().includes(razaVal): false;
     const especieOk = especieVal
       ? (p.especie || "").trim().toLowerCase() === especieVal
       : false;

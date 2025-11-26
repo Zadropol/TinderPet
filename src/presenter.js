@@ -2,6 +2,7 @@ import { crearperfil, leerPerfiles } from "./crearperfilmascota/perfilmascota.js
 import { EnviarSolicitudAdopcion } from "./adopcion";
 import { renderDetalles, obtenerMascotaPorId } from "./mostrardetallesmascota/mostraDetalles.js";
 import { perfilAHTML } from "./crearperfilmascota/perfilesenHTML.js";
+import { buscar, renderResultados } from "./presenter/busquedaPresenter.js"
 
 // ----------------------------- CREACIÓN PERFIL -----------------------------
 // Se elimina la dependencia de Cypress y usarRepositorioTest
