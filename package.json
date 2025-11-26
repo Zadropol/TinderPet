@@ -1,7 +1,7 @@
 {
   "name": "parcel-jest-base",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://github.com/israelantezana/parcel-jest-base",
   "default": "index.html",
   "type": "module",
   "scripts": {
@@ -38,8 +38,19 @@
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "parcel-jest-base": "file:",
     "pg": "^8.16.3"
-  }
+  },
+  "main": "cypress.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zadropol/TinderPet.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Zadropol/TinderPet/issues"
+  },
+  "homepage": "https://github.com/Zadropol/TinderPet#readme"
 }

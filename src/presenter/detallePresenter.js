@@ -1,8 +1,8 @@
-import { leerRepositorio } from "./creacionPresenter.js";
+import { leerPerfiles } from "../crearperfilmascota/perfilmascota.js";
 import { renderDetalles, obtenerMascotaPorId } from "../mostrardetallesmascota/mostraDetalles.js";
 
-function mostrarDetalles(id) {
-  const repo = leerRepositorio();
+async function mostrarDetalles(id) {
+  const repo = await leerPerfiles();
   const mascota = obtenerMascotaPorId(id, repo);
   const html = renderDetalles(mascota);
   const destino = document.querySelector("#detalle-mascota");
