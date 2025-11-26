@@ -513,11 +513,30 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "a53bc01e4c7328b64c89ddb8935bd9a46381bcf2",
     "author": "Zadropol",
     "commit": {
       "date": "2025-11-26T21:05:10.000Z",
       "message": "fix:prueba package.json",
+      "url": "https://github.com/Zadropol/TinderPet/commit/a53bc01e4c7328b64c89ddb8935bd9a46381bcf2"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2025-11-26"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Zadropol",
+    "commit": {
+      "date": "2025-11-26T21:09:49.000Z",
+      "message": "prueba",
       "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
     },
     "stats": {
