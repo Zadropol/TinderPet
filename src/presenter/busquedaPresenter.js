@@ -1,4 +1,5 @@
-import { leerRepositorio } from "./creacionPresenter.js";
+import { leerPerfiles } from "../crearperfilmascota/perfilmascota";
+
 
 function buscar(perfiles, { edad, raza, especie }) {
   const edadVal = edad?.trim();
@@ -6,7 +7,7 @@ function buscar(perfiles, { edad, raza, especie }) {
   const especieVal = especie?.trim().toLowerCase();
   return perfiles.filter((p) => {
     const edadOk = edadVal ? String(p.edad) === String(edadVal) : false;
-    const razaOk = razaVal ? (p.raza || "").trim().toLowerCase() === razaVal : false;
+    const razaOk = razaVal ? (p.raza || "").trim().toLowerCase().includes(razaVal): false;
     const especieOk = especieVal
       ? (p.especie || "").trim().toLowerCase() === especieVal
       : false;
@@ -41,7 +42,7 @@ function initBusqueda(mostrarDetalles) {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const repo = leerRepositorio();
+    const repo = leerPerfiles();
     const resultados = buscar(repo, {
       edad: form.querySelector("#buscar-edad")?.value,
       raza: form.querySelector("#buscar-raza")?.value,
