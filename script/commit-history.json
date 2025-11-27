@@ -3,14 +3,14 @@
     "sha": "HEAD",
     "author": "lucianaaaaaaa",
     "commit": {
-      "date": "2025-11-27T12:19:19.000Z",
-      "message": "merge main con rama_luci",
+      "date": "2025-11-27T12:40:08.000Z",
+      "message": "merge main",
       "url": "https://github.com/Zadropol/TinderPet/commit/HEAD"
     },
     "stats": {
-      "total": 3241,
-      "additions": 2974,
-      "deletions": 267,
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
       "date": "2025-11-27"
     },
     "coverage": 0,
